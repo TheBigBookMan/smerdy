@@ -2,14 +2,21 @@ import { Link } from "react-router-dom";
 
 const Navigation = () => {
   return (
-    <nav className="">
-      <ul className="">
-        <Link className="" to="/">
+    <nav className="flex items-center">
+      <ul className="flex">
+        <Link className="text-green-400" to="/">
           Home
         </Link>
-        <Link to="about">About</Link>
-        <Link to="projects">Projects</Link>
-        <Link to="contact">Contact</Link>
+        <Link className="text-cyan-100" to="about">
+          About
+        </Link>
+        <Link className="text-cyan-100" to="projects">
+          Projects
+        </Link>
+        <Link className="text-cyan-100" to="contact">
+          Contact
+        </Link>
+        <button className="text-cyan-100">Resume</button>
       </ul>
     </nav>
   );

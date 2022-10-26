@@ -7,7 +7,7 @@ import Header from "./components/Header";
 
 function App() {
   return (
-    <body className="bg-violet-900 h-screen">
+    <body className="bg-gray-900 h-screen">
       <Header />
       <Routes>
         <Route index element={<Home />} />
