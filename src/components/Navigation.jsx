@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 
 const Navigation = () => {
   return (
-    <nav className="flex justify-end ">
-      <ul className="font-mono flex gap-12 text-lg text-lime-300 p-10 mx-auto">
+    <nav className="">
+      <ul className="">
         <Link className="" to="/">
           Home
         </Link>

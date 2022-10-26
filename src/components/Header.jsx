@@ -1,14 +1,16 @@
 import close from "../images/close.jpg";
+import Navigation from "./Navigation";
 
 const Header = () => {
   return (
-    <header className="flex justify-between p-10">
-      <div className="flex items-center gap-5 bg-lime-300 h-">
+    <header className="">
+      <div className="">
         <img src={close} alt="me" className="w-12 rounded-3xl" />
-        <h1 className="text-3xl font-extrabold font-mono text-indigo-600">
+        <h1 className="">
           Ben Smerd <small>(Smerdy)</small>
         </h1>
       </div>
+      <Navigation />
     </header>
   );
 };
