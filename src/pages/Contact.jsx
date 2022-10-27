@@ -1,8 +1,8 @@
 const Contact = () => {
   return (
-    <div id="contact" className="h-full">
-      <h1>Contact Me</h1>
-    </div>
+    <section id="contact" className=" bg-gray-900 w-full h-screen">
+      <h1 className="text-green-300">Contact Me</h1>
+    </section>
   );
 };
 
