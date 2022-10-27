@@ -9,12 +9,10 @@ function App() {
   return (
     <body className="bg-gray-900 h-screen">
       <Header />
-      <Routes>
-        <Route index element={<Home />} />
-        <Route path="about" element={<AboutMe />} />
-        <Route path="projects" element={<Projects />} />
-        <Route path="contact" element={<Contact />} />
-      </Routes>
+      <Home />
+      <AboutMe />
+      <Projects />
+      <Contact />
     </body>
   );
 }
