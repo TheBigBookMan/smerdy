@@ -3,7 +3,7 @@ import { HashLink as Link } from "react-router-hash-link";
 const Home = () => {
   return (
     <section id="#" className="bg-gray-900 w-full h-screen">
-      <div className="relative flex flex-col gap-3 font-mono w-3/6 h-screen p-20 ml-40 pt-40">
+      <div className="flex flex-col gap-3 font-mono w-3/6 h-screen p-20 ml-40 pt-40">
         <small className="text-green-400">Hi, my name is</small>
         <h1 className="text-8xl text-zinc-400 font-bold">Ben Smerd.</h1>
         <h2 className="text-zinc-50 text-5xl">

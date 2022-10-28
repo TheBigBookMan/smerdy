@@ -1,8 +1,6 @@
 import { HashLink as Link } from "react-router-hash-link";
 import React, { useState } from "react";
 
-//"text-green-400 text-lg transition-all"
-
 const Navigation = () => {
   const [active, setActive] = useState("home");
 
