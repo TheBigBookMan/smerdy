@@ -9,7 +9,7 @@ const Home = () => {
         <h2 className="text-zinc-50 text-5xl">
           I am a full-stack web developer.
         </h2>
-        <h3 className="text-zinc-400">
+        <h3 className="text-zinc-400 leading-8">
           I like to build dynamic and creative front-end applications while
           integrating logical and smooth running back-end databases and APIs.
         </h3>
