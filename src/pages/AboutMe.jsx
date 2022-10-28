@@ -1,13 +1,14 @@
 import PortraitCut from "../images/PortraitCut.png";
+import { HashLink as Link } from "react-router-hash-link";
 
 const AboutMe = () => {
   return (
     <section
       id="about"
-      className="bg-gray-900 w-full h-screen flex justify-end pt-32"
+      className="bg-gray-900 w-full h-screen flex justify-end pt-24"
     >
-      <div className="border-red border-solid border-2 flex flex-col gap-3 font-mono w-4/6 h-5/6 mr-10">
-        <div className="flex">
+      <div className="flex flex-col gap-3 font-mono w-4/6 h-[34rem] mr-10">
+        <div className="flex pb-3 border-b-solid border-b-gray-600 border-b-2">
           <img src={PortraitCut} alt="me" className="w-80 h-80 rounded-2xl" />
           <div className="flex flex-col gap-2 ml-2">
             <h1 className="text-4xl text-green-400 font-bold font-mono">
@@ -23,22 +24,67 @@ const AboutMe = () => {
               the ability to work independently or collaboratively.
             </p>
             <small className="text-zinc-400 ">
-              Click <span className="text-green-400">"Resume"</span> in the
-              navbar or here to learn more about me or{" "}
-              <span className="text-green-400">"Contact"</span> if you're
-              interested in talking!
+              Click <span className="text-green-400">"Resume"</span> to learn
+              more about me or <span className="text-green-400">"Contact"</span>{" "}
+              if you're interested in talking!
             </small>
             <div className="flex gap-10">
               <button className="text-cyan-100 border-solid border-2 border-green-400 p-2 rounded-2xl hover:bg-green-400 active:text-green-400 active:bg-cyan-100 active:transition-all hover:transition-all">
                 Resume
               </button>
-              <button className="text-cyan-100 border-solid border-2 border-green-400 p-2 rounded-2xl hover:bg-green-400 active:text-green-400 active:bg-cyan-100 active:transition-all hover:transition-all">
+              <Link
+                className="text-cyan-100 border-solid border-2 border-green-400 p-2 rounded-2xl hover:bg-green-400 active:text-green-400 active:bg-cyan-100 active:transition-all hover:transition-all"
+                smooth
+                to="#contact"
+              >
                 Contact
-              </button>
+              </Link>
             </div>
           </div>
         </div>
-        <div className="border-solid border-2 border-green h-full flex"></div>
+        <div className="h-full flex text-green-400 flex flex-col">
+          <h3 className="text-4xl text-green-400 font-bold font-mono mx-auto">
+            Skills
+          </h3>
+          <ul className="flex mx-auto gap-[50px]">
+            <li className=" flex flex-col gap-1">
+              <h3 className="text-zinc-400 text-xl">Front-end</h3>
+              <ul className="text-zinc-50 flex flex-col gap-2">
+                <li>Javascript/JQuery/ReactJS</li>
+                <li>Tailwind/Bootstrap</li>
+                <li>Responsive Design/PWA</li>
+                <li>UI/UX Design</li>
+              </ul>
+            </li>
+            <li className=" flex flex-col gap-1">
+              <h3 className="text-zinc-400 text-xl">Back-end</h3>
+              <ul className="text-zinc-50 flex flex-col gap-2">
+                <li>NodeJS/ExpressJS</li>
+                <li>MySQL/MongoDB</li>
+                <li>REST/GraphQL API</li>
+                <li>CRUD Operations</li>
+              </ul>
+            </li>
+            <li className=" flex flex-col gap-1">
+              <h3 className="text-zinc-400 text-xl">Soft-skills</h3>
+              <ul className="text-zinc-50 flex flex-col gap-2">
+                <li>Emotional Intelligence</li>
+                <li>Adaptability</li>
+                <li>Strong Work Ethic</li>
+                <li>Leadership Skills</li>
+              </ul>
+            </li>
+            <li className=" flex flex-col gap-1">
+              <h3 className="text-zinc-400 text-xl">Concepts</h3>
+              <ul className="text-zinc-50 flex flex-col gap-2">
+                <li>OOP/Functional Programming</li>
+                <li>Git/GitHub Version Control</li>
+                <li>Test Driven Development</li>
+                <li>Bash and Command Line Input</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
   );

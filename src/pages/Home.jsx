@@ -9,12 +9,12 @@ const Home = () => {
         <h2 className="text-zinc-50 text-5xl">
           I am a full-stack web developer.
         </h2>
-        <h3 className="text-zinc-400 leading-8">
+        <h3 className="text-zinc-400 leading-8 pb-3 border-b-solid border-b-gray-600 border-b-2">
           I like to build dynamic and creative front-end applications while
           integrating logical and smooth running back-end databases and APIs.
         </h3>
         <Link
-          className="w-60 mt-5 text-cyan-100 border-solid border-2 border-green-400 p-3 text-center rounded-2xl hover:bg-green-400 active:text-green-400 active:bg-cyan-100"
+          className="w-60 mt-3 text-cyan-100 border-solid border-2 border-green-400 p-3 text-center rounded-2xl hover:bg-green-400 active:text-green-400 active:bg-cyan-100"
           smooth
           to="#projects"
         >
