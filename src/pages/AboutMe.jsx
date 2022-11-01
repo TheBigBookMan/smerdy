@@ -1,5 +1,6 @@
 import PortraitCut from "../images/PortraitCut.png";
 import { HashLink as Link } from "react-router-hash-link";
+import Skills from "../components/Skills";
 
 const AboutMe = () => {
   return (
@@ -46,44 +47,7 @@ const AboutMe = () => {
           <h3 className="text-4xl text-green-400 font-bold font-mono mx-auto">
             Skills
           </h3>
-          <ul className="flex mx-auto gap-[50px]">
-            <li className=" flex flex-col gap-1">
-              <h3 className="text-zinc-400 text-xl">Front-end</h3>
-              <ul className="text-zinc-50 flex flex-col gap-2">
-                <li>Javascript/JQuery/ReactJS</li>
-                <li>Tailwind/Bootstrap</li>
-                <li>Responsive Design/PWA</li>
-                <li>UI/UX Design</li>
-              </ul>
-            </li>
-            <li className=" flex flex-col gap-1">
-              <h3 className="text-zinc-400 text-xl">Back-end</h3>
-              <ul className="text-zinc-50 flex flex-col gap-2">
-                <li>NodeJS/ExpressJS</li>
-                <li>MySQL/MongoDB</li>
-                <li>REST/GraphQL API</li>
-                <li>CRUD Operations</li>
-              </ul>
-            </li>
-            <li className=" flex flex-col gap-1">
-              <h3 className="text-zinc-400 text-xl">Soft-skills</h3>
-              <ul className="text-zinc-50 flex flex-col gap-2">
-                <li>Emotional Intelligence</li>
-                <li>Adaptability</li>
-                <li>Strong Work Ethic</li>
-                <li>Leadership Skills</li>
-              </ul>
-            </li>
-            <li className=" flex flex-col gap-1">
-              <h3 className="text-zinc-400 text-xl">Concepts</h3>
-              <ul className="text-zinc-50 flex flex-col gap-2">
-                <li>OOP/Functional Programming</li>
-                <li>Git/GitHub Version Control</li>
-                <li>Test Driven Development</li>
-                <li>Bash and Command Line Input</li>
-              </ul>
-            </li>
-          </ul>
+          <Skills />
         </div>
       </div>
     </section>
