@@ -2,12 +2,15 @@ import MainProjects from "../components/projectComponents/MainProjects";
 
 const Projects = () => {
   return (
-    <section id="projects" className=" bg-gray-900 w-full h-screen pt-24">
-      <div className="flex flex-col gap-3 font-mono w-4/6 h-[36rem] p-4 ml-20">
-        <h1 className="text-4xl text-green-400 font-bold">Projects</h1>
+    <section id="projects" className=" bg-gray-900 w-full h-screen pt-24 flex">
+      <div className="flex flex-col gap-3 w-4/6 h-[36rem] p-4 ml-20">
+        <h1 className="text-4xl text-green-400 font-bold">Main Projects</h1>
         <ul className="flex flex-wrap gap-8">
           <MainProjects />
         </ul>
+      </div>
+      <div className="border-solid border-2 border-white w-[370px] h-[36rem]">
+        <h1 className="text-4xl text-green-400 font-bold">Side Projects</h1>
       </div>
     </section>
   );
