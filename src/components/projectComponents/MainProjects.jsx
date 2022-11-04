@@ -12,7 +12,7 @@ const MainProjects = () => {
           />
           <div className="flex p-2 gap-5 absolute top-0 left-0 w-full h-0 justify-center items-center opacity-0 group-hover:h-full group-hover:opacity-100 duration-500">
             <a
-              className="text-2xl font-bold text-zinc-50 hover:text-cyan-100 hover:text-3xl transition-all"
+              className="text-2xl font-bold text-zinc-50 hover:text-green-400 hover:text-3xl transition-all"
               href={`${project.deployed}`}
               target="_blank"
             >
