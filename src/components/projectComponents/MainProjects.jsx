@@ -2,9 +2,9 @@ import { mainProjectData } from "../../utils/mainProjectsData";
 
 const MainProjects = () => {
   return (
-    <ul className="flex flex-wrap gap-4 items-center">
+    <ul className="flex flex-wrap gap-4 items-center ">
       {mainProjectData.map((project) => (
-        <li className="relative group mt-5 flex flex-col w-[470px]">
+        <li className="relative group mt-5 flex flex-col w-[470px] overflow-hidden">
           <img
             src={project.img}
             alt={`${project.title}`}
