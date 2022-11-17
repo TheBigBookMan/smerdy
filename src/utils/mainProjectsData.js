@@ -24,10 +24,10 @@ export const mainProjectData = [
   {
     title: "Empty Your Fridge",
     img: EmptyYourFridge,
-    deployed: "",
+    deployed: "https://thebigbookman.github.io/Empty-Your-Fridge/",
     github: "https://github.com/TheBigBookMan/Empty-Your-Fridge",
     description:
-      "I am currently building a ReactJS client-side application where users can input ingredients that they have laying around at home and select the type of meal they want and then multiple recipes will be presented for them to choose for a meal to empty their fridge!",
+      "This is a ReactJS client-side application where users can input ingredients that they have laying around at home and select the type of meal they want and then multiple recipes will be presented for them to choose for a meal to empty their fridge!",
   },
   {
     title: "Team Profile Generator",

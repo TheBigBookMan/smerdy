@@ -8,7 +8,7 @@ const MainProjects = () => {
           <img
             src={project.img}
             alt={`${project.title}`}
-            className="h-52 relative rounded-2xl group-hover:h-56 group-hover:brightness-50 transition-all"
+            className="h-56 relative rounded-2xl group-hover:brightness-50 transition-all"
           />
           <div className="flex p-2 gap-5 absolute top-0 left-0 w-full h-0 justify-center items-center opacity-0 group-hover:h-full group-hover:opacity-100 duration-500">
             <a
