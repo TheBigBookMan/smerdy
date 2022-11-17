@@ -7,7 +7,7 @@ export const mainProjectData = [
   {
     title: "CoinCharter",
     img: CoinCharter,
-    deployed: "",
+    deployed: "https://coin-charter-au.herokuapp.com/",
     github: "https://github.com/bradbrad88/coin-charter",
     description:
       "This is a social crypto coin app that uses the MERN stack and GraphQL with a coingeko crypto third party API. I worked collaboratively in a team and mainly worked on front-end components, the database, routes and logic.",
