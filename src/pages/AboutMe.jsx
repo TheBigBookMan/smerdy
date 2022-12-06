@@ -6,16 +6,20 @@ const AboutMe = () => {
   return (
     <section
       id="about"
-      className="bg-gray-900 w-full h-screen flex justify-end pt-24 snap-center"
+      className="bg-gray-900 w-full h-screen flex justify-end pt-20 snap-center"
     >
-      <div className="flex flex-col gap-3 font-mono w-4/6 h-[34rem] mr-10">
+      <div className="flex flex-col gap-3 p-4 font-mono w-full md:w-4/6 h-[34rem] md:mr-10">
         <div className="flex flex-wrap pb-3 border-b-solid border-b-gray-600 border-b-2">
-          <img src={PortraitCut} alt="me" className="w-80 h-80 rounded-2xl" />
+          <img
+            src={PortraitCut}
+            alt="me"
+            className="w-36 h-36 md:w-80 md:h-80 rounded-2xl"
+          />
           <div className="flex flex-col gap-2 ml-2">
-            <h1 className="text-4xl text-green-400 font-bold font-mono">
+            <h1 className="text-2xl md:text-4xl text-green-400 font-bold font-mono">
               About Me
             </h1>
-            <p className="text-zinc-50 height leading-8">
+            <p className="text-zinc-50 height leading-6 md:leading-8">
               I am a 27 year old recent graduate from The University of Adelaide
               Coding Bootcamp. With an outgoing personality and curiosity to
               explore the vast amount of technologies in this space, I bring
@@ -29,7 +33,7 @@ const AboutMe = () => {
               more about me or <span className="text-green-400">"Contact"</span>{" "}
               if you're interested in talking!
             </small>
-            <div className="flex gap-10">
+            <div className="flex gap-10 justify-center">
               <button className="text-cyan-100 border-solid border-2 border-green-400 p-2 rounded-2xl hover:bg-green-400 active:text-green-400 active:bg-cyan-100 active:transition-all hover:transition-all">
                 Resume
               </button>
