@@ -2,6 +2,7 @@ import CoinCharter from "../images/CoinCharter.png";
 import EmployeeTracker from "../images/EmployeeTracker.png";
 import EmptyYourFridge from "../images/EmptyYourFridge.png";
 import TeamProfileGenerator from "../images/TeamProfileGenerator.png";
+import EntertainNow from "../images/EntertainNow.png";
 
 export const mainProjectData = [
   {
@@ -30,12 +31,12 @@ export const mainProjectData = [
       "This is a ReactJS client-side application where users can input ingredients that they have laying around at home and select the type of meal they want and then multiple recipes will be presented for them to choose for a meal to empty their fridge!",
   },
   {
-    title: "Team Profile Generator",
-    img: TeamProfileGenerator,
+    title: "EntertainNow",
+    img: EntertainNow,
     deployed:
       "https://drive.google.com/file/d/1OURcazg1_q24l2h6Id1PUNoIRHLmJ9tE/view",
-    github: "https://github.com/TheBigBookMan/Team-Profile-Generator",
+    github: "https://github.com/TheBigBookMan/EntertainNow",
     description:
-      "Using NodeJS and OOP, the user inputs details about their employees and a HTML and CSS file with the information will be created. The user will be able to interact with information such as email and github accounts for easy access to contacting the employees.",
+      "Full-stack, mobile first entertainment application where users can input entertainment criteria and then view the youtube trailer for what they are interested in. There is also user authentication and using a database to add to favourites.",
   },
 ];
