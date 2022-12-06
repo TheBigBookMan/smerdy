@@ -6,7 +6,7 @@ const AboutMe = () => {
   return (
     <section
       id="about"
-      className="bg-gray-900 w-full h-screen flex justify-end pt-20 snap-center"
+      className="bg-gray-900 w-full h-[950px] flex justify-end pt-20 snap-center"
     >
       <div className="flex flex-col gap-3 p-4 font-mono w-full md:w-4/6 h-[34rem] md:mr-10">
         <div className="flex flex-wrap pb-3 border-b-solid border-b-gray-600 border-b-2">
@@ -48,7 +48,7 @@ const AboutMe = () => {
           </div>
         </div>
         <div className="h-full flex text-green-400 flex flex-col">
-          <h3 className="text-4xl text-green-400 font-bold font-mono mx-auto">
+          <h3 className="text-2xl md:text-4xl text-green-400 font-bold font-mono mx-auto">
             Skills
           </h3>
           <Skills />

@@ -4,9 +4,9 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className=" bg-gray-900 w-full h-screen pt-24 flex flex-wrap"
+      className=" bg-gray-900 w-full h-full pt-20 flex flex-wrap"
     >
-      <div className="flex flex-col w-4/6 h-[38rem] ml-20">
+      <div className="flex flex-col w-4/6 h-full md:h-[38rem] ml-20">
         <h1 className="text-4xl text-green-400 font-bold">Main Projects</h1>
         <ul className="flex flex-wrap gap-8">
           <MainProjects />
