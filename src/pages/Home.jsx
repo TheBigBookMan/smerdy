@@ -12,8 +12,8 @@ import { HashLink as Link } from "react-router-hash-link";
 
 const Home = () => {
   return (
-    <section id="#" className="bg-gray-900 w-full h-screen snap-center">
-      <div className="flex flex-col gap-3 font-mono h-full w-full pt-28 p-10 md:w-3/6 md:p-20 md:ml-40 md:pt-40">
+    <section id="#" className="bg-gray-900 w-full h-full snap-center">
+      <div className="flex flex-col gap-3 font-mono h-full w-full pt-28 p-8 max-w-4/6 md:p-20 md:ml-40 md:pt-40">
         <small className="text-green-400">Hi, my name is</small>
         <h1 className="text-2xl md:text-8xl text-zinc-400 font-bold">
           Ben Smerd.
@@ -23,7 +23,9 @@ const Home = () => {
         </h2>
         <h3 className="text-zinc-400 leading-8 pb-3 border-b-solid border-b-gray-600 border-b-2">
           I like to build dynamic and creative front-end applications while
-          integrating logical and smooth running back-end databases and APIs.
+          integrating logical and smooth running back-end databases and APIs. I
+          love to learn new technologies and apply them by building real-world
+          applications.
         </h3>
         <div className="flex flex-col gap-6 md:flex-row md:gap-12 items-center  mt-3">
           <Link
