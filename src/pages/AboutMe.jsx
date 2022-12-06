@@ -9,7 +9,7 @@ const AboutMe = () => {
       className="bg-gray-900 w-full h-screen flex justify-end pt-24 snap-center"
     >
       <div className="flex flex-col gap-3 font-mono w-4/6 h-[34rem] mr-10">
-        <div className="flex pb-3 border-b-solid border-b-gray-600 border-b-2">
+        <div className="flex flex-wrap pb-3 border-b-solid border-b-gray-600 border-b-2">
           <img src={PortraitCut} alt="me" className="w-80 h-80 rounded-2xl" />
           <div className="flex flex-col gap-2 ml-2">
             <h1 className="text-4xl text-green-400 font-bold font-mono">

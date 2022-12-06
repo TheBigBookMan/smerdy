@@ -2,7 +2,7 @@ import { skills } from "../utils/skillsData";
 
 const Skills = () => {
   return (
-    <ul className="flex mx-auto gap-[50px]">
+    <ul className="flex flex-wrap mx-auto gap-[50px]">
       {skills.map((skill) => (
         <li className="group relative flex flex-col gap-1">
           <h3 className="relative text-zinc-400 text-xl transition-all cursor-pointer group-hover:text-green-400">
