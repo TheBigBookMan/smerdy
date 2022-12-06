@@ -3,6 +3,7 @@ import React, { useState } from "react";
 
 const Navigation = () => {
   const [active, setActive] = useState("home");
+  const [navOpen, setNavOpen] = useState(false);
 
   const handleActive = (att) => {
     const section = att;
@@ -17,9 +18,45 @@ const Navigation = () => {
     }
   };
 
+  //!!!
+  //!! PUT THE LINKS IN A SEPERATE COMPONENT AND THEN CAN DYANIMCALLY PUT THEM INTO THE HAMBURGER AND REGULAR NAV
+  //!!
+
   return (
     <nav className="flex items-center">
-      <ul className="flex gap-16 items-center">
+      <div
+        onClick={() => setNavOpen(!navOpen)}
+        class="md:hidden flex flex-col gap-2 items-center group hover:cursor-pointer transition-all "
+      >
+        <div
+          class={`w-8 h-0.5 bg-zinc-200 group-hover:bg-green-400 transition-all ${
+            navOpen
+              ? "bg-green-400 origin-top-left rotate-45 group-hover:bg-zinc-200"
+              : ""
+          }`}
+        ></div>
+        <div
+          class={`text-center w-6 h-0.5 bg-zinc-200 group-hover:bg-green-400 transition-all ${
+            navOpen ? "hidden" : ""
+          }`}
+        ></div>
+        <div
+          class={`w-8 h-0.5 bg-zinc-200 group-hover:bg-green-400 transition-all ${
+            navOpen
+              ? "bg-green-400 origin-bottom-right rotate-45 group-hover:bg-zinc-200"
+              : ""
+          }`}
+        ></div>
+      </div>
+      <ul
+        className={`absolute top-0 transition-all ${
+          navOpen
+            ? "absolute transition-all duration-500 top-16 h-[400px] w-[200px] bg-gray-700 rounded-bl-lg"
+            : "duration-500 top-0"
+        }`}
+      ></ul>
+
+      <ul className="hidden md:flex md:gap-8 lg:gap-16 items-center">
         <Link
           onClick={() => handleActive("home")}
           className={
