@@ -1,5 +1,5 @@
-import { HashLink as Link } from "react-router-hash-link";
 import React, { useState } from "react";
+import NavLinks from "./NavLinks";
 
 const Navigation = () => {
   const [active, setActive] = useState("home");
@@ -17,10 +17,6 @@ const Navigation = () => {
       setActive("contact");
     }
   };
-
-  //!!!
-  //!! PUT THE LINKS IN A SEPERATE COMPONENT AND THEN CAN DYANIMCALLY PUT THEM INTO THE HAMBURGER AND REGULAR NAV
-  //!!
 
   return (
     <nav className="flex items-center">
@@ -49,62 +45,17 @@ const Navigation = () => {
         ></div>
       </div>
       <ul
-        className={`absolute top-0 transition-all ${
+        className={`absolute top-16 transition-all ${
           navOpen
-            ? "absolute transition-all duration-500 top-16 h-[400px] w-[200px] bg-gray-700 rounded-bl-lg"
-            : "duration-500 top-0"
+            ? "md:hidden flex flex-col gap-8 items-center absolute transition-all duration-700 right-0 h-[200px] w-[150px] bg-gray-900 rounded-bl-lg"
+            : ""
         }`}
-      ></ul>
+      >
+        {navOpen && <NavLinks active={active} handleActive={handleActive} />}
+      </ul>
 
       <ul className="hidden md:flex md:gap-8 lg:gap-16 items-center">
-        <Link
-          onClick={() => handleActive("home")}
-          className={
-            active === "home"
-              ? "text-green-400 text-lg transition-all"
-              : "text-cyan-100 transition-all"
-          }
-          smooth
-          to="#"
-        >
-          Home
-        </Link>
-        <Link
-          onClick={() => handleActive("about")}
-          className={
-            active === "about"
-              ? "text-green-400 text-lg transition-all"
-              : "text-cyan-100 transition-all"
-          }
-          smooth
-          to="#about"
-        >
-          About
-        </Link>
-        <Link
-          onClick={() => handleActive("projects")}
-          className={
-            active === "projects"
-              ? "text-green-400 text-lg transition-all"
-              : "text-cyan-100 transition-all"
-          }
-          smooth
-          to="#projects"
-        >
-          Projects
-        </Link>
-        <Link
-          onClick={() => handleActive("contact")}
-          className={
-            active === "contact"
-              ? "text-green-400 text-lg transition-all"
-              : "text-cyan-100 transition-all"
-          }
-          smooth
-          to="#contact"
-        >
-          Contact
-        </Link>
+        <NavLinks active={active} handleActive={handleActive} />
         <button className="text-cyan-100 border-solid border-2 border-green-400 p-2 rounded-2xl hover:bg-green-400 active:text-green-400 active:bg-cyan-100 active:transition-all hover:transition-all">
           Resume
         </button>
