@@ -6,7 +6,7 @@ import Header from "./components/Header";
 
 function App() {
   return (
-    <body>
+    <body className="snap-y">
       <Header />
       <Home />
       <AboutMe />

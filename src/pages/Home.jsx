@@ -1,8 +1,18 @@
-// TODO ADD IN A THREEJS ANIMATED CUBE TO THE RIGHT OR SOMETHING ANIMATED TO LOOK COOL
 import { HashLink as Link } from "react-router-hash-link";
+
+// TODO ADD IN A THREEJS ANIMATED CUBE TO THE RIGHT OR SOMETHING ANIMATED TO LOOK COOL
+
+//TODO might need react router from Link for the open github/linkedin etc
+
+//TODO might need to reduce the height of the pages so less gap between each one to look better-- MAYBE THOUGH
+
+//TODO add the snapping scroll to Y axis movement
+
+//TODO need to have the url change when scrolling--- will have to search how to do that
+
 const Home = () => {
   return (
-    <section id="#" className="bg-gray-900 w-full h-screen">
+    <section id="#" className="bg-gray-900 w-full h-screen snap-center">
       <div className="flex flex-col gap-3 font-mono w-3/6 h-screen p-20 ml-40 pt-40">
         <small className="text-green-400">Hi, my name is</small>
         <h1 className="text-8xl text-zinc-400 font-bold">Ben Smerd.</h1>

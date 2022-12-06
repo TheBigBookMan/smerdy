@@ -1,5 +1,7 @@
 import { mainProjectData } from "../../utils/mainProjectsData";
 
+//TODO might need to dd in react router Link for the click to open new page with website-- not sure if react router can do that
+
 const MainProjects = () => {
   return (
     <ul className="flex flex-wrap gap-4 items-center ">
