@@ -1,4 +1,10 @@
 import { HashLink as Link } from "react-router-hash-link";
+import {
+  AiFillGithub,
+  AiFillLinkedin,
+  AiFillInstagram,
+  AiOutlineTwitter,
+} from "react-icons/ai";
 
 // TODO ADD IN A THREEJS ANIMATED CUBE TO THE RIGHT OR SOMETHING ANIMATED TO LOOK COOL
 
@@ -38,22 +44,22 @@ const Home = () => {
           <ul className="flex gap-8 text-3xl md:gap-12 md:text-5xl text-green-500">
             <li>
               <a href="https://github.com/TheBigBookMan" target="_blank">
-                <i className="fa-brands fa-github hover:text-cyan-100"></i>
+                <AiFillGithub className="hover:text-cyan-100 text-4xl" />
               </a>
             </li>
             <li>
               <a href="https://www.linkedin.com/in/bensmerd/" target="_blank">
-                <i className="fa-brands fa-linkedin hover:text-cyan-100"></i>
+                <AiFillLinkedin className="hover:text-cyan-100 text-4xl" />
               </a>
             </li>
             <li>
               <a href="https://www.instagram.com/smerdy/" target="_blank">
-                <i className="fa-brands fa-instagram hover:text-cyan-100"></i>
+                <AiFillInstagram className="hover:text-cyan-100 text-4xl" />
               </a>
             </li>
             <li>
               <a href="https://twitter.com/BenSmerd" target="_blank">
-                <i className="fa-brands fa-twitter hover:text-cyan-100"></i>
+                <AiOutlineTwitter className="hover:text-cyan-100 text-4xl" />
               </a>
             </li>
           </ul>

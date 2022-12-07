@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import NavLinks from "./NavLinks";
 
+//TODO try anuimate the navigation bar down a bit cleaner
+
 const Navigation = () => {
   const [active, setActive] = useState("home");
   const [navOpen, setNavOpen] = useState(false);
@@ -22,22 +24,22 @@ const Navigation = () => {
     <nav className="flex items-center">
       <div
         onClick={() => setNavOpen(!navOpen)}
-        class="md:hidden flex flex-col gap-2 items-center group hover:cursor-pointer transition-all "
+        className="md:hidden flex flex-col gap-2 items-center group hover:cursor-pointer transition-all "
       >
         <div
-          class={`w-8 h-0.5 bg-zinc-200 group-hover:bg-green-400 transition-all ${
+          className={`w-8 h-0.5 bg-zinc-200 group-hover:bg-green-400 transition-all ${
             navOpen
               ? "bg-green-400 origin-top-left rotate-45 group-hover:bg-zinc-200"
               : ""
           }`}
         ></div>
         <div
-          class={`text-center w-6 h-0.5 bg-zinc-200 group-hover:bg-green-400 transition-all ${
+          className={`text-center w-6 h-0.5 bg-zinc-200 group-hover:bg-green-400 transition-all ${
             navOpen ? "hidden" : ""
           }`}
         ></div>
         <div
-          class={`w-8 h-0.5 bg-zinc-200 group-hover:bg-green-400 transition-all ${
+          className={`w-8 h-0.5 bg-zinc-200 group-hover:bg-green-400 transition-all ${
             navOpen
               ? "bg-green-400 origin-bottom-right rotate-45 group-hover:bg-zinc-200"
               : ""
@@ -47,7 +49,7 @@ const Navigation = () => {
       <ul
         className={`absolute top-16 transition-all ${
           navOpen
-            ? "md:hidden flex flex-col gap-8 items-center absolute transition-all duration-700 right-0 h-[200px] w-[150px] bg-gray-900 rounded-bl-lg"
+            ? "md:hidden flex flex-col gap-8 items-center absolute transition-all duration-400 right-0 h-[200px] w-[150px] bg-gray-900 rounded-bl-lg"
             : ""
         }`}
       >
