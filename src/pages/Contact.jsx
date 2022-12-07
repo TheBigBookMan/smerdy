@@ -1,6 +1,8 @@
 import React, { useRef } from "react";
 import { HashLink as Link } from "react-router-hash-link";
 import emailjs from "@emailjs/browser";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 //TODO add in cheeky toaster pop up for when message sent
 
@@ -9,6 +11,19 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
+
+    const createToast = (message) => {
+      toast.success(`${message}`, {
+        position: "top-left",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+      });
+    };
 
     emailjs
       .sendForm(
@@ -20,10 +35,11 @@ const Contact = () => {
       .then(
         (result) => {
           console.log(result.text);
-          console.log("Message sent!");
+          createToast("Message sent!");
         },
         (error) => {
           console.log(error.text);
+          createToast("Error, please check credentials and try again!");
         }
       );
   };
@@ -67,6 +83,18 @@ const Contact = () => {
             className="hover:cursor-pointer w-60 text-cyan-100 border-solid border-2 border-green-400 p-3 text-center rounded-2xl hover:bg-green-400 active:text-green-400 active:bg-cyan-100 transition-all"
           />
         </form>
+        <ToastContainer
+          position="top-left"
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="dark"
+        />
       </div>
     </section>
   );
