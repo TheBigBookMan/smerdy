@@ -1,4 +1,5 @@
 import MainProjects from "../components/projectComponents/MainProjects";
+import SideProjects from "../components/projectComponents/SideProjects";
 
 const Projects = () => {
   return (
@@ -10,11 +11,13 @@ const Projects = () => {
         <h1 className="text-2xl md:text-4xl text-green-400 font-bold">
           Main Projects
         </h1>
-
         <MainProjects />
       </div>
-      <div className="border-solid border-2 border-white w-[370px] h-[36rem]">
-        <h1 className="text-4xl text-green-400 font-bold">Side Projects</h1>
+      <div className=" mt-2 w-full md:w-[370px] h-[300px]">
+        <h1 className="text-2xl md:text-4xl text-green-400 font-bold mb-2">
+          Side Projects
+        </h1>
+        <SideProjects />
       </div>
     </section>
   );
