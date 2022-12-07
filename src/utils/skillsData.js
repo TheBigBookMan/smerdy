@@ -2,7 +2,7 @@ export const skills = [
   {
     skillTitle: "Front-end",
     skills: [
-      "Javascript/JQuery/ReactJS",
+      "Javascript/Typescript/ReactJS",
       "Tailwind/Bootstrap",
       "Responsive Design/PWA",
       "UI/UX Design",

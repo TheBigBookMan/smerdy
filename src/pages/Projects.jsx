@@ -13,7 +13,7 @@ const Projects = () => {
         </h1>
         <MainProjects />
       </div>
-      <div className=" mt-2 w-full md:w-[370px] h-[300px]">
+      <div className=" mt-2 w-full md:w-[370px] h-full">
         <h1 className="text-2xl md:text-4xl text-green-400 font-bold mb-2">
           Side Projects
         </h1>

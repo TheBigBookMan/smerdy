@@ -3,7 +3,7 @@ import { AiFillGithub } from "react-icons/ai";
 
 const SideProjects = () => {
   return (
-    <ul className="flex flex-col gap-2 h-full">
+    <ul className="flex flex-col gap-2 pr-5 h-[170px] overflow-y-scroll scrollbar-thin scrollbar-thumb-green-400 scrollbar-track-zinc-50 scrollbar-thumb-rounded scrollbar-track-rounded">
       {sideProjectData.map((project) => (
         <li
           key={project.title}
