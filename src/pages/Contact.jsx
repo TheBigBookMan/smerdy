@@ -8,6 +8,18 @@ const Contact = () => {
     message: "",
   });
 
+  const changeDetails = (e) => {
+    setFormDetails({
+      ...formDetails,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    console.log(formDetails);
+  };
+
   return (
     <section id="contact" className=" bg-gray-900 w-full h-screen">
       <div className="flex flex-col gap-3 font-mono w-full h-screen pt-20 p-4 md:w-3/6 md:ml-40">
@@ -25,20 +37,32 @@ const Contact = () => {
         <form className="flex flex-col gap-4">
           <input
             type="text"
+            name="name"
+            onChange={changeDetails}
             value={formDetails.name}
             placeholder="* preferred name..."
+            className="rounded-lg pl-1 p-1 border-green-400 border-solid border-4 outline-0"
           />
           <input
             type="text"
+            name="email"
+            onChange={changeDetails}
             value={formDetails.email}
             placeholder="* email address..."
+            className="rounded-lg pl-1 p-1 border-green-400 border-solid border-4 outline-0"
           />
           <textarea
+            name="message"
+            onChange={changeDetails}
             value={formDetails.message}
             placeholder="* send a message..."
             rows={4}
+            className="rounded-lg pl-1 p-1 border-green-400 border-solid border-4 outline-0"
           />
-          <button className="w-60 text-cyan-100 border-solid border-2 border-green-400 p-3 text-center rounded-2xl hover:bg-green-400 active:text-green-400 active:bg-cyan-100 transition-all">
+          <button
+            onClick={sendEmail}
+            className="w-60 text-cyan-100 border-solid border-2 border-green-400 p-3 text-center rounded-2xl hover:bg-green-400 active:text-green-400 active:bg-cyan-100 transition-all"
+          >
             Send Message
           </button>
         </form>
