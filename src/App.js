@@ -1,17 +1,16 @@
-import AboutMe from "./pages/AboutMe";
-import Contact from "./pages/Contact";
-import Home from "./pages/Home";
-import Projects from "./pages/Projects";
+import MainPage from "./pages/Main";
 import Header from "./components//common/Header";
+import ProjectPage from "./pages/ProjectPage";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <main className="snap-y">
       <Header />
-      <Home />
-      <AboutMe />
-      <Projects />
-      <Contact />
+      <Routes>
+        <Route path="/" element={<MainPage />} />
+        <Route path="project" element={<ProjectPage />} />
+      </Routes>
     </main>
   );
 }

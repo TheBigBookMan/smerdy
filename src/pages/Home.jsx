@@ -7,6 +7,7 @@ import {
 } from "react-icons/ai";
 
 // TODO ADD IN A THREEJS ANIMATED CUBE TO THE RIGHT OR SOMETHING ANIMATED TO LOOK COOL
+//TODO COULD ADD IN THOSE WAVEY DOTS AND THEN HAVE 3D OF MY NAME THAT CAN MOVE AROUND ON THE HOME PAGE, WOULD BE REALLY COOL
 
 //TODO might need react router from Link for the open github/linkedin etc
 
