@@ -1,5 +1,5 @@
 import { sideProjectData } from "../../utils/sideProjectsData";
-import { AiFillGithub } from "react-icons/ai";
+import { AiFillGithub, AiOutlineLink } from "react-icons/ai";
 import { Link } from "react-router-dom";
 
 const SideProjects = () => {
@@ -12,13 +12,10 @@ const SideProjects = () => {
             to={`/project/${project.title}`}
           >
             <h1 className="text-zinc-50">{project.title}</h1>
-            <a
-              className="text-green-400"
-              href={`${project.github}`}
-              target="_blank"
-            >
-              <AiFillGithub className="text-zinc-50 text-2xl hover:text-gray-900" />
-            </a>
+            <div className="flex flex-row gap-1 items-center">
+              <AiFillGithub className="text-zinc-50 text-2xl" />
+              <AiOutlineLink className="text-zinc-50 text-2xl" />
+            </div>
           </Link>
         </li>
       ))}
