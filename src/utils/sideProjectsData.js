@@ -1,3 +1,8 @@
+import TeamProfileGenerator from "../images/TeamProfileGenerator.png";
+import ReadMEGenerator from "../images/ReadMEGenerator.png";
+import WeatherApp from "../images/WeatherApp.png";
+import Cafe from "../images/Cafe.png";
+
 export const sideProjectData = [
   {
     title: "Portfolio- Currently on",
@@ -24,7 +29,7 @@ export const sideProjectData = [
   },
   {
     title: "Team Profile Generator",
-    img: "",
+    img: TeamProfileGenerator,
     deployed:
       "https://drive.google.com/file/d/1OURcazg1_q24l2h6Id1PUNoIRHLmJ9tE/view",
     github: "https://github.com/TheBigBookMan/Team-Profile-Generator",
@@ -48,7 +53,7 @@ export const sideProjectData = [
   },
   {
     title: "ReadME Generator",
-    img: "",
+    img: ReadMEGenerator,
     deployed:
       "https://drive.google.com/file/d/1EuQuHXA-1whJwjeJi644p5tQqawym99Z/view",
     github: "https://github.com/TheBigBookMan/ReadME-Generator",
@@ -61,7 +66,7 @@ export const sideProjectData = [
 
   {
     title: "Weather App",
-    img: "",
+    img: WeatherApp,
     deployed: "https://thebigbookman.github.io/Weather-Dashboard/",
     github: "https://github.com/TheBigBookMan/Weather-Dashboard",
     description:
@@ -72,7 +77,7 @@ export const sideProjectData = [
   },
   {
     title: "Coffee & Bagels",
-    img: "",
+    img: Cafe,
     deployed: "https://thebigbookman.github.io/Cafe-template/",
     github: "https://github.com/TheBigBookMan/Cafe-template",
     description:
