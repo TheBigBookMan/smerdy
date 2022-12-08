@@ -21,7 +21,7 @@ const MainProjects = () => {
             <div className="flex gap-2 items-center">
               <Link
                 className="text-xl font-bold text-zinc-50 hover:text-green-400  transition-all"
-                to="/project"
+                to={`/project/${project.title}`}
               >
                 {project.title}
               </Link>
