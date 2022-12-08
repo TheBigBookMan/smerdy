@@ -3,6 +3,8 @@ import NavLinks from "./NavLinks";
 
 //TODO try anuimate the navigation bar down a bit cleaner
 
+//TODO need to fix when its on the project page to get rid of the navbar and put in a "back" button
+
 const Navigation = () => {
   const [active, setActive] = useState("home");
   const [navOpen, setNavOpen] = useState(false);
