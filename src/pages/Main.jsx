@@ -3,12 +3,12 @@ import AboutMe from "./AboutMe";
 import Projects from "./Projects";
 import Contact from "./Contact";
 
-const MainPage = () => {
+const MainPage = ({ setProjectInfo }) => {
   return (
     <div>
       <Home />
       <AboutMe />
-      <Projects />
+      <Projects setProjectInfo={setProjectInfo} />
       <Contact />
     </div>
   );

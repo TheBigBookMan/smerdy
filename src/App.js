@@ -9,7 +9,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<MainPage />} />
-        <Route path="project" element={<ProjectPage />} />
+        <Route path="project/:projecttitle" element={<ProjectPage />} />
       </Routes>
     </main>
   );
