@@ -2,14 +2,18 @@ import Home from "./Home";
 import AboutMe from "./AboutMe";
 import Projects from "./Projects";
 import Contact from "./Contact";
+import Three from "../components/Three";
 
-const MainPage = ({ setProjectInfo }) => {
+const MainPage = () => {
   return (
     <div>
-      <Home />
-      <AboutMe />
-      <Projects setProjectInfo={setProjectInfo} />
-      <Contact />
+      <Three />
+      <div className="absolute">
+        <Home />
+        <AboutMe />
+        <Projects />
+        <Contact />
+      </div>
     </div>
   );
 };

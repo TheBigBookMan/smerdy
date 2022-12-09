@@ -3,6 +3,9 @@ import NavLinks from "./NavLinks";
 
 //TODO try anuimate the navigation bar down a bit cleaner
 
+//TODO add in resume file for the click resume
+// https://reactgo.com/react-download-file-on-button-click/
+
 //TODO need to fix when its on the project page to get rid of the navbar and put in a "back" button
 
 const Navigation = () => {

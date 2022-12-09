@@ -44,22 +44,38 @@ const Home = () => {
           </Link>
           <ul className="flex gap-8 text-3xl md:gap-12 md:text-5xl text-green-500">
             <li>
-              <a href="https://github.com/TheBigBookMan" target="_blank">
+              <a
+                href="https://github.com/TheBigBookMan"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <AiFillGithub className="hover:text-cyan-100 text-4xl" />
               </a>
             </li>
             <li>
-              <a href="https://www.linkedin.com/in/bensmerd/" target="_blank">
+              <a
+                href="https://www.linkedin.com/in/bensmerd/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <AiFillLinkedin className="hover:text-cyan-100 text-4xl" />
               </a>
             </li>
             <li>
-              <a href="https://www.instagram.com/smerdy/" target="_blank">
+              <a
+                href="https://www.instagram.com/smerdy/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <AiFillInstagram className="hover:text-cyan-100 text-4xl" />
               </a>
             </li>
             <li>
-              <a href="https://twitter.com/BenSmerd" target="_blank">
+              <a
+                href="https://twitter.com/BenSmerd"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <AiOutlineTwitter className="hover:text-cyan-100 text-4xl" />
               </a>
             </li>

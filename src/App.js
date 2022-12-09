@@ -5,7 +5,7 @@ import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <main className="snap-y">
+    <main className="overflow-x-hidden">
       <Header />
       <Routes>
         <Route path="/" element={<MainPage />} />

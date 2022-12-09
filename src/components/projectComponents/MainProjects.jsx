@@ -29,6 +29,7 @@ const MainProjects = () => {
                 className="text-green-400"
                 href={`${project.github}`}
                 target="_blank"
+                rel="noreferrer"
               >
                 <AiFillGithub className="hover:text-cyan-100 text-4xl" />
               </a>

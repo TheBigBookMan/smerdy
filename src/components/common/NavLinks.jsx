@@ -1,5 +1,5 @@
 import { HashLink as Link } from "react-router-hash-link";
-import React, { useState } from "react";
+import React from "react";
 
 const NavLinks = ({ active, handleActive }) => {
   return (
