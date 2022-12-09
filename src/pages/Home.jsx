@@ -5,7 +5,6 @@ import {
   AiFillInstagram,
   AiOutlineTwitter,
 } from "react-icons/ai";
-import Three from "../components/Three";
 
 // TODO ADD IN A THREEJS ANIMATED CUBE TO THE RIGHT OR SOMETHING ANIMATED TO LOOK COOL
 //TODO COULD ADD IN THOSE WAVEY DOTS AND THEN HAVE 3D OF MY NAME THAT CAN MOVE AROUND ON THE HOME PAGE, WOULD BE REALLY COOL
@@ -21,8 +20,6 @@ import Three from "../components/Three";
 const Home = () => {
   return (
     <section id="#" className="  bg-gray-900 w-full h-full snap-center">
-      {/* <Three /> */}
-      {/* z-20 relative */}
       <div className="z-20 relative flex flex-col gap-3 font-mono h-full w-full pt-24 p-8 max-w-4/6 md:p-20 md:ml-40 md:pt-40">
         <small className="text-green-400">Hi, my name is</small>
         <h1 className="text-2xl md:text-8xl text-zinc-50 font-bold">

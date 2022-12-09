@@ -47,7 +47,7 @@ function Points() {
     [t, f, a]
   );
 
-  const count = 400;
+  const count = 200;
   const sep = 5;
   let positions = useMemo(() => {
     let positions = [];
@@ -98,7 +98,7 @@ function Points() {
         attach="material"
         map={imgTex}
         color={0x00aaff}
-        size={0.5}
+        size={0.35}
         sizeAttenuation
         transparent={false}
         alphaTest={0.5}
@@ -112,7 +112,7 @@ function AnimationCanvas() {
   return (
     <Canvas
       colorManagement={false}
-      camera={{ position: [100, 10, 0], fov: 75 }}
+      camera={{ position: [100, 200, 50], fov: 85 }}
     >
       <Suspense fallback={null}>
         <Points />
