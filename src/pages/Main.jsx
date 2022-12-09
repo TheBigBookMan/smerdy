@@ -6,14 +6,12 @@ import Three from "../components/Three";
 
 const MainPage = () => {
   return (
-    <div>
+    <div className="relative">
       <Three />
-      <div className="absolute">
-        <Home />
-        <AboutMe />
-        <Projects />
-        <Contact />
-      </div>
+      <Home />
+      <AboutMe />
+      <Projects />
+      <Contact />
     </div>
   );
 };

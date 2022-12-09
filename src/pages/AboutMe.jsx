@@ -8,7 +8,7 @@ const AboutMe = () => {
       id="about"
       className="bg-gray-900 w-full h-[1000px] flex justify-end pt-20 snap-center"
     >
-      <div className="flex flex-col gap-3 p-4 font-mono w-full md:w-4/6 h-[34rem] md:mr-10">
+      <div className="z-20 relative flex flex-col gap-3 p-4 font-mono w-full md:w-4/6 h-[34rem] md:mr-10">
         <div className="flex flex-wrap pb-3 border-b-solid border-b-gray-600 border-b-2">
           <img
             src={PortraitCut}

@@ -5,6 +5,7 @@ import {
   AiFillInstagram,
   AiOutlineTwitter,
 } from "react-icons/ai";
+import Three from "../components/Three";
 
 // TODO ADD IN A THREEJS ANIMATED CUBE TO THE RIGHT OR SOMETHING ANIMATED TO LOOK COOL
 //TODO COULD ADD IN THOSE WAVEY DOTS AND THEN HAVE 3D OF MY NAME THAT CAN MOVE AROUND ON THE HOME PAGE, WOULD BE REALLY COOL
@@ -19,16 +20,18 @@ import {
 
 const Home = () => {
   return (
-    <section id="#" className="bg-gray-900 w-full h-full snap-center">
-      <div className="flex flex-col gap-3 font-mono h-full w-full pt-24 p-8 max-w-4/6 md:p-20 md:ml-40 md:pt-40">
+    <section id="#" className="  bg-gray-900 w-full h-full snap-center">
+      {/* <Three /> */}
+      {/* z-20 relative */}
+      <div className="z-20 relative flex flex-col gap-3 font-mono h-full w-full pt-24 p-8 max-w-4/6 md:p-20 md:ml-40 md:pt-40">
         <small className="text-green-400">Hi, my name is</small>
-        <h1 className="text-2xl md:text-8xl text-zinc-400 font-bold">
+        <h1 className="text-2xl md:text-8xl text-zinc-50 font-bold">
           Ben Smerd.
         </h1>
-        <h2 className="text-zinc-50 text-2xl md:text-5xl">
+        <h2 className="text-green-500 text-2xl md:text-5xl">
           I am a full-stack web developer.
         </h2>
-        <h3 className="text-zinc-400 leading-8 pb-3 border-b-solid border-b-gray-600 border-b-2">
+        <h3 className="text-zinc-50 leading-8 pb-3 border-b-solid border-b-gray-600 border-b-2">
           I like to build dynamic and creative front-end applications while
           integrating logical and smooth running back-end databases and APIs. I
           love to learn new technologies and apply them by building real-world

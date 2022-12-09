@@ -124,7 +124,7 @@ function AnimationCanvas() {
 
 const Three = () => {
   return (
-    <div className="relative w-full h-full bg-gray-900">
+    <div className="absolute top-0 left-0 z-10 w-full h-full bg-gray-900">
       {/* <Suspense fallback={<div>Loading...</div>}>
         <AnimationCanvas />
       </Suspense> */}
