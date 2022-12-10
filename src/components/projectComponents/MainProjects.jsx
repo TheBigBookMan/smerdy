@@ -1,10 +1,12 @@
 import { mainProjectData } from "../../utils/mainProjectsData";
 import { AiFillGithub } from "react-icons/ai";
 import { Link } from "react-router-dom";
+import { usePageContext } from "../context/PageContext";
 
 //TODO might need to dd in react router Link for the click to open new page with website-- not sure if react router can do that
 
 const MainProjects = () => {
+  const { setIsHomePage } = usePageContext();
   return (
     <ul className="flex flex-col w-full gap-6 items-center ">
       {mainProjectData.map((project) => (
@@ -22,6 +24,7 @@ const MainProjects = () => {
               <Link
                 className="text-xl font-bold text-zinc-50 hover:text-green-400  transition-all"
                 to={`/project/${project.title}`}
+                onClick={() => setIsHomePage(false)}
               >
                 {project.title}
               </Link>
