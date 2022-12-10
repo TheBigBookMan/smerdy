@@ -49,7 +49,7 @@ const Home = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <AiFillGithub className="hover:text-cyan-100 text-4xl" />
+                <AiFillGithub className="hover:text-cyan-100 text-4xl transition-all" />
               </a>
             </li>
             <li>
@@ -58,7 +58,7 @@ const Home = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <AiFillLinkedin className="hover:text-cyan-100 text-4xl" />
+                <AiFillLinkedin className="hover:text-cyan-100 text-4xl transition-all" />
               </a>
             </li>
             <li>
@@ -67,7 +67,7 @@ const Home = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <AiFillInstagram className="hover:text-cyan-100 text-4xl" />
+                <AiFillInstagram className="hover:text-cyan-100 text-4xl transition-all" />
               </a>
             </li>
             <li>
@@ -76,7 +76,7 @@ const Home = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <AiOutlineTwitter className="hover:text-cyan-100 text-4xl" />
+                <AiOutlineTwitter className="hover:text-cyan-100 text-4xl transition-all" />
               </a>
             </li>
           </ul>

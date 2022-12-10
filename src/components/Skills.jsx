@@ -4,8 +4,11 @@ const Skills = () => {
   return (
     <ul className="flex flex-col md:gap-[50px]">
       {skills.map((skill) => (
-        <li key={skill.skillTitle} className="group relative flex flex-col ">
-          <h3 className="relative text-zinc-400 text-xl transition-all cursor-pointer group-hover:text-zinc-50">
+        <li
+          key={skill.skillTitle}
+          className="group relative flex flex-col cursor-default"
+        >
+          <h3 className="relative text-zinc-400 text-xl transition-all group-hover:text-zinc-50">
             {skill.skillTitle}
           </h3>
           <ul className="text-green-400 flex flex-col gap-2 duration-1000">

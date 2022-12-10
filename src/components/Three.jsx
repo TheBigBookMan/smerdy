@@ -98,7 +98,7 @@ function Points() {
         attach="material"
         map={imgTex}
         color={0x00aaff}
-        size={0.35}
+        size={0.4}
         sizeAttenuation
         transparent={false}
         alphaTest={0.5}
