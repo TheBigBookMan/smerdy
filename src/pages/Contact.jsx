@@ -3,6 +3,7 @@ import { HashLink as Link } from "react-router-hash-link";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import GitHub from "../components/GitHub";
 
 //TODO add in cheeky toaster pop up for when message sent
 
@@ -95,6 +96,7 @@ const Contact = () => {
           pauseOnHover
           theme="dark"
         />
+        <GitHub />
       </div>
     </section>
   );
