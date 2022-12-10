@@ -2,6 +2,7 @@ import TeamProfileGenerator from "../images/TeamProfileGenerator.png";
 import ReadMEGenerator from "../images/ReadMEGenerator.png";
 import WeatherApp from "../images/WeatherApp.png";
 import Cafe from "../images/Cafe.png";
+import OldPortfolio from "../images/OldPortfolio.png";
 
 export const sideProjectData = [
   {
@@ -11,9 +12,9 @@ export const sideProjectData = [
     github: "https://github.com/TheBigBookMan/smerdy",
     description: "",
     mainDescription:
-      "I wanted to create a portfolio that stood out a little bit more than the rest. In my bootcamp we had to make portfolios, so I was lucky enough to have the chance to view other people in classes. But they really all felt kind of the same, following a specific template we were given. I decided to branch away and do my own sort of thing. I really enjoy learning new Javascript and React technologies, so creating a portfolio that shows off my curiosity I figured would be a smart decision. That's why I have tried to implement some more graphic design/3d modeling with ThreeJS.",
+      "I wanted to create a portfolio that stood out a little bit more than the rest. I really enjoy learning new Javascript and React technologies, so creating a portfolio that shows off my curiosity I figured would be a smart decision. That's why I have tried to implement some more graphic design/3d modeling with React Three Fiber. Implementing the canvas utility that browsers can use, I created a 3D background with geometry and React Three Fiber metrics. I have also used a React package that provides a GitHub contributions calendar. I had to import the data from a third party API to GitHub and create an algorithm that would count my commits from each repo on their respective days.",
     technologies:
-      "ReactJS, Javascript, TailwindCSS, ThreeJS, React Packages and responsive design.",
+      "ReactJS, Javascript, TailwindCSS, React Three Fiber, React Packages and responsive design.",
   },
   {
     title: "Houride",
@@ -38,6 +39,30 @@ export const sideProjectData = [
     mainDescription:
       "This application was used with Object-Oriented Programming to design the layout of information for employees. Using the inquirer package, the user will be prompted with questions in relation to their employees. The user will input information and then a profile manager application will launch with the information added in.",
     technologies: "JEST, CSS, Javascript, OOP, NodeJS, NPM Packages.",
+  },
+  {
+    title: "Social Network API",
+    img: "",
+    deployed:
+      "https://drive.google.com/file/d/1fuazNoiwaC0yIwVe8dadhd-wi-ZKHfyC/view",
+    github: "https://github.com/TheBigBookMan/Social-Network-API",
+    description:
+      "This back-end project was created to allow users to create a social-network profile and add/remove friends as well as creating a thought that could be reacted to by other friends. The thought could also be edited and removed whenever the user pleases. This utilizes the REST API which allows users to perform CRUD operations.",
+    mainDescription:
+      "For one of our bootcamp assignments we had to create a backend API for a social media application. The API would allow users to perform CRUD operations, such as creating an account, adding and removing friends, adding a thought comment and removing or editing that thought comment. This is only an API and will require further development to allow for user interface interaction. However it is a good showcase for how ExpressJS and the REST APIs work, as well as working with a NoSQL database (MongoDB) and connecting it to Javascript using the ORM Mongoose.",
+    technologies:
+      "NodeJS, ExpressJS, REST API, MongoDB, Mongoose and Insomnia.",
+  },
+  {
+    title: "Portfolio- Old",
+    img: OldPortfolio,
+    deployed: "https://thebigbookman.github.io/Ben-Smerd-Portfolio/",
+    github: "https://github.com/TheBigBookMan/Ben-Smerd-Portfolio",
+    description:
+      "This was one of the first portfolios I created and the first application I created using React. This is a single page application, and was a fun trial run to test out how React worked.",
+    mainDescription:
+      "In our bootcamp we had to create a portfolio using React and this was the first application I built using React and I think is a good measure for how far I have come when comparing it to the current portfolio I have created today. These are only around 2 months difference between they were built, so the difference in how much I have grown and learnt is great to see. I used CSS-In-JS styling, which was also a move I decided to do at the time because I hadn't used TailwindCSS before, so this also shows the progress I have grown from using regular CSS to now Tailwind. I like this project as a whole because I thoroughly enjoyed creating it and learning how React components worked especially.",
+    technologies: "Javascript, ReactJS, NPM Packages.",
   },
   {
     title: "WhatToRead",
