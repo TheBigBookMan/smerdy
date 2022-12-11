@@ -36,7 +36,7 @@ const ProjectPage = () => {
       </div>
       <div className="flex flex-row gap-10 justify-center">
         <a href={`${selectedProject.github}`} target="_blank" rel="noreferrer">
-          <AiFillGithub className="hover:text-cyan-100 text-green-400 text-6xl" />
+          <AiFillGithub className="hover:text-cyan-100 text-green-400 text-6xl transition-all" />
         </a>
         <div className={`${selectedProject.deployed ? "flex" : "hidden"}`}>
           <a
@@ -44,7 +44,7 @@ const ProjectPage = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <AiOutlineLink className="hover:text-cyan-100 text-green-400 text-6xl" />
+            <AiOutlineLink className="hover:text-cyan-100 text-green-400 text-6xl transition-all" />
           </a>
         </div>
       </div>

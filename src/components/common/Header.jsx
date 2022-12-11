@@ -19,7 +19,9 @@ const Header = () => {
           to="/"
           onClick={() => setIsHomePage(true)}
         >
-          <p className="text-green-400 text-lg hover:cursor-pointer">Back</p>
+          <p className="text-green-400 text-lg hover:cursor-pointer hover:text-zinc-50 transition-all">
+            Back
+          </p>
         </Link>
       )}
     </header>
