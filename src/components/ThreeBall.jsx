@@ -1,4 +1,4 @@
-import { Canvas, useFrame } from "@react-three/fiber";
+import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import { useRef, useState } from "react";
 import { useSpring, animated, config } from "@react-spring/three";
 
@@ -43,12 +43,30 @@ const MyMeshSphere = () => {
   );
 };
 
+const Camera = () => {
+  const { viewport } = useThree();
+
+  const ref = useRef();
+  useFrame(({ mouse }) => {
+    const x = (mouse.x * viewport.width) / 2;
+    const y = (mouse.y * viewport.height) / 2;
+    ref.current.position.set(x, y, 0);
+    ref.current.rotation.set(-y, x, 0);
+  });
+
+  return (
+    <>
+      <ambientLight intensity={0.18} />
+      <directionalLight color="white" ref={ref} />
+    </>
+  );
+};
+
 const ThreeBall = () => {
   return (
     <div className="border-2 border-white border-solid h-full w-full">
       <Canvas>
-        <ambientLight intensity={0.1} />
-        <directionalLight color="white" position={[52, 50, 50]} />
+        <Camera />
         <MyMeshSphere />
       </Canvas>
     </div>

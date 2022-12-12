@@ -28,7 +28,7 @@ const Home = () => {
         <Center center>
           <Text3D font={Roboto_Bold} size={5} letterSpacing={1.25}>
             Ben Smerd
-            <meshNormalMaterial />
+            <meshBasicMaterial wireframe color="white" />
           </Text3D>
         </Center>
       </Canvas>
@@ -39,7 +39,7 @@ const Home = () => {
     <section id="#" className="  bg-gray-900 w-full h-full snap-center">
       <div className="z-20 relative flex flex-col gap-3 font-mono h-full w-full pt-24 p-8 max-w-4/6 md:p-20 md:ml-40 md:pt-40">
         <small className="text-green-400">Hi, my name is</small>
-        <div className=" h-[40px] md:h-[80px]">
+        <div className="w-[240px] md:w-[480px] h-[40px] md:h-[80px]">
           <TextThree />
         </div>
         <h2 className="text-green-500 text-2xl md:text-5xl">
