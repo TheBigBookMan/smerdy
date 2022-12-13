@@ -6,14 +6,14 @@ const AboutMe = () => {
   return (
     <section
       id="about"
-      className="bg-gray-900 w-full h-full flex flex-col justify-end pt-20 snap-center pb-[380px]"
+      className="bg-gray-900 w-full h-full flex flex-col justify-end pt-20 snap-center pb-[380px] md:pb-[240px] lg:pb-10 lg:mb-20"
     >
-      <div className="z-20 relative flex flex-col gap-3 p-4 font-mono w-full md:w-4/6 h-[34rem] md:mr-10">
-        <div className="flex flex-wrap pb-3 border-b-solid border-b-gray-600 border-b-2">
+      <div className="z-20 relative flex flex-col lg:flex-row gap-3 p-4 font-mono w-full h-[34rem]  lg:pl-24">
+        <div className="flex flex-wrap pb-3 border-b-solid border-b-gray-600 border-b-2 lg:border-none">
           <img
             src={PortraitCut}
             alt="me"
-            className="w-36 h-36 md:w-80 md:h-80 rounded-2xl"
+            className="w-36 h-36 md:w-60 md:h-60 rounded-2xl"
           />
           <div className="flex flex-col gap-2 ml-2">
             <h1 className="text-2xl md:text-4xl text-green-400 font-bold font-mono">
@@ -47,7 +47,7 @@ const AboutMe = () => {
             </div>
           </div>
         </div>
-        <div className="h-full flex text-green-400 flex flex-col">
+        <div className="h-full w-full text-green-400 flex flex-col ">
           <h3 className="text-2xl md:text-4xl text-green-400 font-bold font-mono mx-auto">
             Skills
           </h3>

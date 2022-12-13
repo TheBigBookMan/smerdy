@@ -8,11 +8,11 @@ import { usePageContext } from "../context/PageContext";
 const MainProjects = () => {
   const { setIsHomePage } = usePageContext();
   return (
-    <ul className="flex flex-col w-full gap-6 items-center ">
+    <ul className="flex flex-col w-full gap-6 items-center md:flex-row md:flex-wrap max-w-[1000px] justify-center ">
       {mainProjectData.map((project) => (
         <li
           key={project.title}
-          className="relative group flex flex-col w-full lg:w-[470px] overflow-hidden"
+          className="relative group flex flex-col w-full max-w-[470px] md:max-w-[360px] overflow-hidden"
         >
           <img
             src={project.img}

@@ -6,6 +6,7 @@ export const skills = [
       "Tailwind/Bootstrap",
       "Responsive Design/PWA",
       "UI/UX Design",
+      "React Three Fiber/Spring",
     ],
   },
   {

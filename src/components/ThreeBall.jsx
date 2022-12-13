@@ -64,12 +64,10 @@ const Camera = () => {
 
 const ThreeBall = () => {
   return (
-    <div className="border-2 border-white border-solid h-full w-full">
-      <Canvas>
-        <Camera />
-        <MyMeshSphere />
-      </Canvas>
-    </div>
+    <Canvas>
+      <Camera />
+      <MyMeshSphere />
+    </Canvas>
   );
 };
 
