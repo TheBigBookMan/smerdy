@@ -53,7 +53,7 @@ const GitHub = () => {
   ];
 
   return (
-    <div className="flex flex-col gap-4">
+    <div className="flex flex-col gap-4 md:w-4/6 lg:pr-36">
       <div className="flex flex-col">
         <div className="flex flex-row justify-between items-center">
           <h1 className="text-green-400 text-2xl md:text-4xl font-bold">

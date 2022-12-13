@@ -36,11 +36,8 @@ const Home = () => {
   };
 
   return (
-    <section
-      id="#"
-      className="  bg-gray-900 w-full h-full md:h-screen snap-center"
-    >
-      <div className="z-20 relative h-full w-full flex flex-col gap-3 font-mono lg:flex-row md:items-center  pt-24 p-8 lg:p-20 md:pt-40">
+    <section id="#" className="  bg-gray-900 w-full h-full  pt-24  snap-center">
+      <div className="z-20 relative h-full w-full flex flex-col gap-3 font-mono lg:flex-row md:items-center  p-8 lg:p-20 md:pt-20">
         <div className="lg:w-4/6">
           <small className="text-green-400">Hi, my name is</small>
           <div className="w-[240px] md:w-[480px] h-[40px] md:h-[80px]">
@@ -104,7 +101,7 @@ const Home = () => {
             </ul>
           </div>
         </div>
-        <div className="h-full w-full hover:cursor-help p-2 lg:w-2/4">
+        <div className="relative h-[140px] lg:h-[400px] w-full hover:cursor-help p-2 lg:w-2/4">
           <ThreeBall />
         </div>
       </div>

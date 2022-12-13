@@ -6,10 +6,10 @@ const AboutMe = () => {
   return (
     <section
       id="about"
-      className="bg-gray-900 w-full h-full flex flex-col justify-end pt-20 snap-center pb-[380px] md:pb-[240px] lg:pb-10 lg:mb-20"
+      className="bg-gray-900 w-full h-full flex flex-col justify-end pt-20 snap-center "
     >
-      <div className="z-20 relative flex flex-col lg:flex-row gap-3 p-4 font-mono w-full h-[34rem]  lg:pl-24">
-        <div className="flex flex-wrap pb-3 border-b-solid border-b-gray-600 border-b-2 lg:border-none">
+      <div className="z-20 relative h-full flex flex-col gap-3 p-4 font-mono w-full lg:pl-24 lg:w-4/6">
+        <div className="flex flex-col lg:flex-row pb-3 border-b-solid border-b-gray-600 border-b-2 ">
           <img
             src={PortraitCut}
             alt="me"
