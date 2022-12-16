@@ -54,10 +54,14 @@ const AboutMe = () => {
           </h3>
           <Skills />
         </div>
-        <div className="h-full w-full text-green-400 flex flex-col ">
+        <div className="h-full w-full text-green-400 flex flex-col gap-2">
           <h3 className="text-2xl md:text-4xl text-green-400 font-bold font-mono mx-auto">
             Hobbies
           </h3>
+          <p className="text-zinc-50 font-bold font-mono mx-auto">
+            Click on a category to view some pictures with some storytelling
+            about my interests...
+          </p>
           <Hobbies />
         </div>
       </div>
