@@ -1,41 +1,6 @@
-import DalorianBeach from "../../../images/hobbiesImages/AI/DalorianBeach.png";
-import Drifting from "../../../images/hobbiesImages/guitar/Drifting.png";
-import Big from "../../../images/hobbiesImages/hiking/Big.jpg";
-import Surfing from "../../../images/hobbiesImages/sport/Surfing.png";
-import Turkey from "../../../images/hobbiesImages/travel/Turkey.png";
 import { Link } from "react-router-dom";
 import { usePageContext } from "../../context/PageContext";
-import {
-  FaGuitar,
-  FaHiking,
-  FaMapMarkerAlt,
-  FaRunning,
-  FaRobot,
-} from "react-icons/fa";
-
-const reactIcons = [FaRobot, FaGuitar, FaHiking, FaMapMarkerAlt, FaRunning];
-const thumbnails = [
-  {
-    image: DalorianBeach,
-    category: "Technology",
-  },
-  {
-    image: Drifting,
-    category: "Guitar",
-  },
-  {
-    image: Big,
-    category: "Hiking",
-  },
-  {
-    image: Turkey,
-    category: "Travel",
-  },
-  {
-    image: Surfing,
-    category: "Sport",
-  },
-];
+import { thumbnails, reactIcons } from "./../../../utils/hobbiesData";
 
 //!
 //! DO RESPONSIVENESS
