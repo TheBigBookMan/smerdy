@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import NavLinks from "./NavLinks";
-import { useSpring, animated, config } from "@react-spring/web";
+import { useSpring, animated, config, useTransition } from "@react-spring/web";
 
 //TODO try anuimate the navigation bar down a bit cleaner
 
@@ -39,16 +39,13 @@ const Navigation = () => {
       }),
       []
     );
+
     return (
       <animated.ul
         style={props}
-        className={`absolute top-20 transition-all ${
-          navOpen
-            ? "md:hidden flex flex-col gap-8 items-center absolute transition-all duration-400 h-[220px] w-[150px] bg-gray-900 rounded-bl-lg"
-            : ""
-        }`}
+        className={`absolute top-20 transition-all md:hidden flex flex-col gap-8 items-center absolute transition-all h-[220px] w-[150px] bg-gray-900 rounded-bl-lg`}
       >
-        {navOpen && <NavLinks active={active} handleActive={handleActive} />}
+        <NavLinks active={active} handleActive={handleActive} />
       </animated.ul>
     );
   };
@@ -79,7 +76,7 @@ const Navigation = () => {
           }`}
         ></div>
       </div>
-      <HamburgerMenu />
+      {navOpen && <HamburgerMenu />}
 
       <ul className="hidden md:flex md:gap-8 lg:gap-16 items-center">
         <NavLinks active={active} handleActive={handleActive} />
