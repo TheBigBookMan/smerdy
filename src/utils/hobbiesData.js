@@ -18,12 +18,24 @@ import Tears from "../images/hobbiesImages/guitar/Tears.png";
 
 //* Hiking
 import Big from "../images/hobbiesImages/hiking/Big.jpg";
+import Camino from "../images/hobbiesImages/hiking/Camino.png";
+import Melbs from "../images/hobbiesImages/hiking/Melbs.jpg";
+import NiceOne from "../images/hobbiesImages/hiking/NiceOne.jpg";
+import NiceTwo from "../images/hobbiesImages/hiking/NiceTwo.jpg";
+import Run from "../images/hobbiesImages/hiking/Run.jpg";
 
 //* Sport
 import Surfing from "../images/hobbiesImages/sport/Surfing.png";
+import Tennis from "../images/hobbiesImages/sport/Tennis.png";
+import Volleyball from "../images/hobbiesImages/sport/Volleyball.png";
 
 //* Travel
 import Turkey from "../images/hobbiesImages/travel/Turkey.png";
+import Amsterdam from "../images/hobbiesImages/travel/Amsterdam.png";
+import Copenhagen from "../images/hobbiesImages/travel/Copenhagen.png";
+import EastCoast from "../images/hobbiesImages/travel/EastCoast.png";
+import SA from "../images/hobbiesImages/travel/SA.png";
+import Melbourne from "../images/hobbiesImages/travel/Melbourne.png";
 
 import {
   FaGuitar,
@@ -40,10 +52,6 @@ export const reactIcons = [
   FaMapMarkerAlt,
   FaRunning,
 ];
-
-//!
-//! NEED TO ADD IN BOOLEAN FOR HAS LINKS SO THE GUITAR ONE CAN BE CLCIKED ON AND TAKEN TO YOUTUBE LINK
-//!
 
 export const thumbnails = [
   {
@@ -105,7 +113,8 @@ export const thumbnails = [
   {
     image: Drifting,
     category: "Guitar",
-    mainDescription: "",
+    mainDescription:
+      "I've played guitar since I was around 12 years old and have always loved it. I started off with electric but made my way over to acoustic guitar. I love playing fingerstyle songs that require consistent rhythm while adding in complex finger movements. I love finding tough songs and just jumping straight into them, the challenge is very rewarding!",
     showcase: [
       {
         imageShowcase: Drifting,
@@ -136,33 +145,99 @@ export const thumbnails = [
   {
     image: Big,
     category: "Hiking",
-    mainDescription: "",
+    mainDescription:
+      "During the 2020 COVID lockdown I took up hiking as I was living in suburban Adelaide and there are many hiking trails walking distance from the house. I enjoyed it so much that I continued to hike after lockdown. Being with the nature and challenging myself physically but most importantly, mentally was really fun.",
     showcase: [
       {
-        imageShowcase: "",
-        descriptionShowcase: "",
+        imageShowcase: Big,
+        descriptionShowcase:
+          "This was my most impressive one I have ever done, it was 64km and took around 15 hours (including breaks). I did this with a mate and it was an exceptionally challenging thing to do. I hated it at the time, but looking back on it now I grew a lot from it.",
+      },
+      {
+        imageShowcase: Melbs,
+        descriptionShowcase:
+          "When I moved back to Melbourne after the 2020 lockdown I had the urge to go for more walks, but there were not as many hiking trails as I lived in the CBD. I found the 30km city loop and it was actually really nice with lots of different scenery.",
+      },
+      {
+        imageShowcase: NiceOne,
+        descriptionShowcase:
+          "This was a test of halfway for the big walk stated above.",
+      },
+      {
+        imageShowcase: NiceTwo,
+        descriptionShowcase:
+          "This was a test of the other half for the big walk stated above.",
+      },
+      {
+        imageShowcase: Run,
+        descriptionShowcase:
+          "I had really good momentum with running in 2020 lockdown (along with hiking) and this was my best run. I am keen to get back into running.",
+      },
+      {
+        imageShowcase: Camino,
+        descriptionShowcase:
+          "I haven't done this, but this is my goal to hike hopefully within the next two years. It's in Spain and is around 850km, which will take roughly 1 month to complete.",
       },
     ],
   },
   {
     image: Turkey,
     category: "Travel",
-    mainDescription: "",
+    mainDescription:
+      "I absolutely love to travel and explore hidden places. I love to move to new cities and meet new people of different cultures while experiencing the unique lifestyles. My next place to move to is either Buenos Aires or Montreal and work in Web Development or related fields.",
     showcase: [
       {
-        imageShowcase: "",
-        descriptionShowcase: "",
+        imageShowcase: Turkey,
+        descriptionShowcase:
+          "My first trip away from Australia was to Turkey and it was amazing seeing such a different and rich culture. Especially loved the Mosques.",
+      },
+      {
+        imageShowcase: SA,
+        descriptionShowcase:
+          "Even though I am from Adelaide, I have traveled around South Australia a fair bit and enjoyed seeing the outback.",
+      },
+      {
+        imageShowcase: Copenhagen,
+        descriptionShowcase:
+          "I lived in Copenhagen for 6 months while doing a studying exchange. It gave me a great chance to meet people from all around the world, while also living in a completely different cultural lifestyle.",
+      },
+      {
+        imageShowcase: Amsterdam,
+        descriptionShowcase:
+          "The year after my exchange, I lived in Amsterdam for 3 months (thanks to my friend I met on my exchange) and I got to travel around Holland more. It was a great time to continue exploring Europe.",
+      },
+      {
+        imageShowcase: Melbourne,
+        descriptionShowcase:
+          "I moved to Melbourne to study my Masters degree, and even though this got cut short by a year and a half due to COVID. I had an amazing 9 months there and it was great to live in a fast-paced and exciting city.",
+      },
+      {
+        imageShowcase: EastCoast,
+        descriptionShowcase:
+          "Right before COVID hit, I did a 1 month campervan trip from Cairns down to Sydney with 4 others. This was a great experience to check out great surf spots, while also going on amazing walking trails and experiencing a wild lifestyle such as campervanning.",
       },
     ],
   },
   {
     image: Surfing,
     category: "Sport",
-    mainDescription: "",
+    mainDescription:
+      "I have always loved sport and played it all my life. I played soccer when I was young, but now play volleyball, tennis and might play footy in 2023. I also enjoy to go surfing when I have the chance.",
     showcase: [
       {
-        imageShowcase: "",
-        descriptionShowcase: "",
+        imageShowcase: Surfing,
+        descriptionShowcase:
+          "I used to surf quite a bit in Victoria when I lived in Melbourne, but due to COVID I still haven't gotten around to getting back into it in Adelaide.",
+      },
+      {
+        imageShowcase: Tennis,
+        descriptionShowcase:
+          "I have played tennis since I was 5 and was playing in division 1 in Adelaide for quite a while. However, I have had a few injuries which has stopped me playing and now I enjoy taking it more socially than super competitively.",
+      },
+      {
+        imageShowcase: Volleyball,
+        descriptionShowcase:
+          "I love volleyball and it is a great team sport. I have played for around 13 years and competed in highest level for juniors and second highest level for seniors. Winning a bronze medal in the Australian University Games in 2018 as well.",
       },
     ],
   },

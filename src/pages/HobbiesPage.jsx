@@ -28,7 +28,7 @@ const HobbiesPage = () => {
   } else {
     needsLinks = false;
   }
-  console.log(needsLinks);
+
   const showcase = selectedHobby.showcase;
   // console.log(showcase);
   return (
