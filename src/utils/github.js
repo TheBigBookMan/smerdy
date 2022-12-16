@@ -19,6 +19,9 @@ import axios from "axios";
 //? This is the package to import the calendar and then connect the data from the function below into there
 //?
 
+const onePerPage =
+  "https://api.github.com/repos/TheBigBookMan/Houride/commits?sha=main&per_page=1&page=1";
+// ?
 const reposUrl = "https://api.github.com/users/TheBigBookMan/repos";
 const commitUrl =
   "https://api.github.com/repos/TheBigBookMan/Houride/commits?per_page=100";
@@ -26,8 +29,9 @@ const commitUrl =
 export const getRepos = async () => {
   let repos;
   try {
-    const { data } = await axios.get(commitUrl);
-    console.log(data);
+    // const {data} = await axios.get(onePerPage);
+    const { headers } = await axios.get(onePerPage);
+    console.log(headers.link);
   } catch (err) {
     console.log(err);
   }
