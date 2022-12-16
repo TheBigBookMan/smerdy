@@ -1,7 +1,7 @@
-import CoinCharter from "../images/CoinCharter.png";
-import EmployeeTracker from "../images/EmployeeTracker.png";
-import EmptyYourFridge from "../images/EmptyYourFridge.png";
-import EntertainNow from "../images/EntertainNow.png";
+import CoinCharter from "../images/projectImages/CoinCharter.png";
+import EmployeeTracker from "../images/projectImages/EmployeeTracker.png";
+import EmptyYourFridge from "../images/projectImages/EmptyYourFridge.png";
+import EntertainNow from "../images/projectImages/EntertainNow.png";
 
 export const mainProjectData = [
   {

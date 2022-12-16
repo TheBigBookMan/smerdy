@@ -1,8 +1,8 @@
-import TeamProfileGenerator from "../images/TeamProfileGenerator.png";
-import ReadMEGenerator from "../images/ReadMEGenerator.png";
-import WeatherApp from "../images/WeatherApp.png";
-import Cafe from "../images/Cafe.png";
-import OldPortfolio from "../images/OldPortfolio.png";
+import TeamProfileGenerator from "../images/projectImages/TeamProfileGenerator.png";
+import ReadMEGenerator from "../images/projectImages/ReadMEGenerator.png";
+import WeatherApp from "../images/projectImages/WeatherApp.png";
+import Cafe from "../images/projectImages/Cafe.png";
+import OldPortfolio from "../images/projectImages/OldPortfolio.png";
 
 export const sideProjectData = [
   {
