@@ -2,6 +2,8 @@ import PortraitCut from "../images/PortraitCut.png";
 import { HashLink as Link } from "react-router-hash-link";
 import Skills from "../components/Skills";
 
+//TODO Make a animejs swuare thing where mouse over and it lights up, can be a group of squares that are dark and highlight ouse over and they highlight light green or something, will need to use the mouseover event handler and create a group of boxes and queryall
+
 const AboutMe = () => {
   return (
     <section
