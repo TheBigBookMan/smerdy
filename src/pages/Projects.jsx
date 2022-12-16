@@ -1,5 +1,5 @@
-import MainProjects from "../components/projectComponents/MainProjects";
-import SideProjects from "../components/projectComponents/SideProjects";
+import MainProjects from "../components/features/projectComponents/MainProjects";
+import SideProjects from "../components/features/projectComponents/SideProjects";
 
 const Projects = () => {
   return (

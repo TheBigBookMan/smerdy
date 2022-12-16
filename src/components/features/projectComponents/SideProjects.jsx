@@ -1,7 +1,7 @@
-import { sideProjectData } from "../../utils/sideProjectsData";
+import { sideProjectData } from "../../../utils/sideProjectsData";
 import { AiFillGithub, AiOutlineLink } from "react-icons/ai";
 import { Link } from "react-router-dom";
-import { usePageContext } from "../context/PageContext";
+import { usePageContext } from "../../context/PageContext";
 
 const SideProjects = () => {
   const { setIsHomePage } = usePageContext();

@@ -1,6 +1,7 @@
 import PortraitCut from "../images/PortraitCut.png";
 import { HashLink as Link } from "react-router-hash-link";
-import Skills from "../components/Skills";
+import Skills from "../components/features/aboutmeComponents/Skills";
+import Hobbies from "../components/features/aboutmeComponents/Hobbies";
 
 const AboutMe = () => {
   return (
@@ -52,6 +53,12 @@ const AboutMe = () => {
             Skills
           </h3>
           <Skills />
+        </div>
+        <div className="h-full w-full text-green-400 flex flex-col ">
+          <h3 className="text-2xl md:text-4xl text-green-400 font-bold font-mono mx-auto">
+            Hobbies
+          </h3>
+          <Hobbies />
         </div>
       </div>
     </section>

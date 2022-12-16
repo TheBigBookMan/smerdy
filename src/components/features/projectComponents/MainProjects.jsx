@@ -1,7 +1,7 @@
-import { mainProjectData } from "../../utils/mainProjectsData";
+import { mainProjectData } from "../../../utils/mainProjectsData";
 import { AiFillGithub } from "react-icons/ai";
 import { Link } from "react-router-dom";
-import { usePageContext } from "../context/PageContext";
+import { usePageContext } from "../../context/PageContext";
 
 //TODO might need to dd in react router Link for the click to open new page with website-- not sure if react router can do that
 

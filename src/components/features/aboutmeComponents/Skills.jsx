@@ -1,8 +1,8 @@
-import { skills } from "../utils/skillsData";
+import { skills } from "../../../utils/skillsData";
 
 const Skills = () => {
   return (
-    <ul className="flex flex-col md:flex-row md:gap-[40px] h-[340px] md:h-[300px] lg:gap-2 ">
+    <ul className="flex flex-col md:flex-row md:gap-[40px] h-[340px] md:h-[300px] lg:gap-2 overflow-y-hidden">
       {skills.map((skill) => (
         <li
           key={skill.skillTitle}

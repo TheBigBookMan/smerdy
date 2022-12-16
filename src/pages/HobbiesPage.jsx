@@ -8,6 +8,8 @@
 
 //* general photos of travel
 
+//* need to make it so user can click "back" on the header once in this page like in the project page--- might be some prop drilling, cant remember
+
 const HobbiesPage = () => {
   return (
     <div className="flex flex-col items-center gap-4 bg-gray-900 w-full min-h-screen  pt-20 p-4">

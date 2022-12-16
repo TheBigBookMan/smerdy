@@ -3,8 +3,6 @@ import EmployeeTracker from "../images/EmployeeTracker.png";
 import EmptyYourFridge from "../images/EmptyYourFridge.png";
 import EntertainNow from "../images/EntertainNow.png";
 
-//TODO for the new project page, add in a property- Maindescription- which will be the long description of what it is
-
 export const mainProjectData = [
   {
     title: "CoinCharter",
