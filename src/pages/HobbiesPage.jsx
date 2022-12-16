@@ -8,7 +8,11 @@
 
 //* general photos of travel
 
+//* pics of sport- sufing, tennis, vlleyball
+
 //* need to make it so user can click "back" on the header once in this page like in the project page--- might be some prop drilling, cant remember
+
+//TODO will need to have a "ifVideo" and for the guitar ones create a play button over the image and link to the youtube URL
 
 const HobbiesPage = () => {
   return (
