@@ -2,20 +2,6 @@ import { useParams } from "react-router-dom";
 import { thumbnails } from "../utils/hobbiesData";
 import { AiFillPlayCircle } from "react-icons/ai";
 
-//* guitar- have list of youtube vidoes of my playing on show and small descriptions
-
-//* technology I like- dall-e pictures and prompts, could have in the github commit history algoritn that I WILL MAKE and write a small blog about, trading charts for crypto
-
-//* noticeable strava hikes with screenshots of details- 64km and multiple 30km
-
-//* general photos of travel
-
-//* pics of sport- sufing, tennis, vlleyball
-
-//* need to make it so user can click "back" on the header once in this page like in the project page--- might be some prop drilling, cant remember
-
-//TODO will need to have a "ifVideo" and for the guitar ones create a play button over the image and link to the youtube URL
-
 const HobbiesPage = () => {
   const { hobbietitle } = useParams();
   let selectedHobby;
@@ -30,7 +16,7 @@ const HobbiesPage = () => {
   }
 
   const showcase = selectedHobby.showcase;
-  // console.log(showcase);
+
   return (
     <div className="flex flex-col items-center gap-4 bg-gray-900 w-full min-h-screen  pt-20 p-4">
       <div className="max-w-[1000px] flex flex-col gap-4">

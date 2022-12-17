@@ -10,7 +10,7 @@ const Hobbies = () => {
   const { setIsHomePage } = usePageContext();
 
   return (
-    <ul className="flex flex-col items-center gap-2 h-[400px] overflow-y-scroll scrollbar-thin scrollbar-thumb-green-400 scrollbar-track-zinc-50 scrollbar-thumb-rounded scrollbar-track-rounded">
+    <ul className="flex flex-col md:flex-row md:justify-center md:flex-wrap items-center gap-2 h-[400px] lg:h-[540px] overflow-y-scroll scrollbar-thin scrollbar-thumb-green-400 scrollbar-track-zinc-50 scrollbar-thumb-rounded scrollbar-track-rounded">
       {thumbnails.map((hobby, idx) => {
         const Icon = reactIcons[idx];
         return (

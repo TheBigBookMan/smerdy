@@ -2,7 +2,7 @@ import { skills } from "../../../utils/skillsData";
 
 const Skills = () => {
   return (
-    <ul className="flex flex-col md:flex-row md:gap-[40px] h-[340px] md:h-[300px] lg:gap-2 overflow-y-hidden">
+    <ul className="flex flex-col md:flex-row md:gap-[40px] h-[340px] md:h-[300px] lg:gap-2 overflow-y-hidden overflow-x-hidden">
       {skills.map((skill) => (
         <li
           key={skill.skillTitle}
