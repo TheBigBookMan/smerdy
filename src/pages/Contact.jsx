@@ -3,9 +3,7 @@ import { HashLink as Link } from "react-router-hash-link";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import GitHub from "../components/GitHub";
-
-//TODO add in cheeky toaster pop up for when message sent
+// import GitHub from "../components/GitHub";
 
 const Contact = () => {
   const form = useRef();
@@ -98,7 +96,7 @@ const Contact = () => {
             theme="dark"
           />
         </div>
-        <GitHub />
+        {/* <GitHub /> */}
       </div>
     </section>
   );

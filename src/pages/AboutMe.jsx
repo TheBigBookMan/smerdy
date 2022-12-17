@@ -3,14 +3,18 @@ import { HashLink as Link } from "react-router-hash-link";
 import Skills from "../components/features/aboutmeComponents/Skills";
 import Hobbies from "../components/features/aboutmeComponents/Hobbies";
 
+//TODO add in resume file for the click resume
+// https://reactgo.com/react-download-file-on-button-click/
+// TODO will complete this after completed resume, for now just link to google docs
+
 const AboutMe = () => {
   return (
     <section
       id="about"
       className="bg-gray-900 w-full h-full flex flex-col justify-center pt-20 xl:pt-32 snap-center "
     >
-      <div className="z-20 relative h-full flex flex-col lg:flex-row gap-3 p-4 pb-0 font-mono w-full">
-        <div className=" xl:pl-24 lg:w-4/6">
+      <div className="z-20 relative  lg:px-10 h-full flex flex-col lg:flex-row gap-3 p-4 pb-0 font-mono w-full">
+        <div className=" lg:w-4/6">
           <div className="flex flex-col lg:flex-row pb-3 border-b-solid border-b-gray-600 border-b-2 ">
             <img
               src={PortraitCut}
@@ -38,9 +42,15 @@ const AboutMe = () => {
                 interested in talking!
               </small>
               <div className="flex gap-10 justify-center">
-                <button className="text-cyan-100 border-solid border-2 border-green-400 p-2 rounded-2xl hover:bg-green-400 active:text-green-400 active:bg-cyan-100 active:transition-all hover:transition-all">
-                  Resume
-                </button>
+                <a
+                  href="https://docs.google.com/document/d/1_vrk3fhXfnX-9CUk1hRl5cFi8O4moaVieW22z6Y1gdU/edit"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <button className="text-cyan-100 border-solid border-2 border-green-400 p-2 rounded-2xl hover:bg-green-400 active:text-green-400 active:bg-cyan-100 active:transition-all hover:transition-all">
+                    Resume
+                  </button>
+                </a>
                 <Link
                   className="text-cyan-100 border-solid border-2 border-green-400 p-2 rounded-2xl hover:bg-green-400 active:text-green-400 active:bg-cyan-100 active:transition-all hover:transition-all"
                   smooth
