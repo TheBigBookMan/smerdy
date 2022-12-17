@@ -2,9 +2,6 @@ import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import { useRef, useState } from "react";
 import { useSpring, animated, config } from "@react-spring/three";
 
-//TODO make it spin around slowly, similar to the background
-//TODO make it move side to side
-
 const MyMeshSphere = () => {
   const [active, setActive] = useState(false);
   const myMesh = useRef();

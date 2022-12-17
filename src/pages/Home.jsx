@@ -10,17 +10,6 @@ import { Text3D, Center } from "@react-three/drei";
 import Roboto_Bold from "../files/Roboto_Bold.json";
 import { Canvas } from "@react-three/fiber";
 
-// TODO ADD IN A THREEJS ANIMATED CUBE TO THE RIGHT OR SOMETHING ANIMATED TO LOOK COOL
-//TODO COULD ADD IN THOSE WAVEY DOTS AND THEN HAVE 3D OF MY NAME THAT CAN MOVE AROUND ON THE HOME PAGE, WOULD BE REALLY COOL
-
-//TODO might need react router from Link for the open github/linkedin etc
-
-//TODO might need to reduce the height of the pages so less gap between each one to look better-- MAYBE THOUGH
-
-//TODO add the snapping scroll to Y axis movement
-
-//TODO need to have the url change when scrolling--- will have to search how to do that
-
 const Home = () => {
   const TextThree = () => {
     return (

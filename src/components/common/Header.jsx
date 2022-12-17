@@ -3,8 +3,6 @@ import Navigation from "./Navigation";
 import { Link } from "react-router-dom";
 import { usePageContext } from "../context/PageContext";
 
-//TODO use spring of animejs for the navigation menu come down on mobile first
-
 const Header = () => {
   const { isHomePage, setIsHomePage } = usePageContext();
   return (

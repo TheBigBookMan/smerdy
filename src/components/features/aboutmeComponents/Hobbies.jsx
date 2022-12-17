@@ -2,10 +2,6 @@ import { Link } from "react-router-dom";
 import { usePageContext } from "../../context/PageContext";
 import { thumbnails, reactIcons } from "./../../../utils/hobbiesData";
 
-//!
-//! DO RESPONSIVENESS
-//!
-
 const Hobbies = () => {
   const { setIsHomePage } = usePageContext();
 

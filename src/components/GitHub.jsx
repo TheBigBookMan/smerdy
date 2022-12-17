@@ -2,6 +2,8 @@ import React from "react";
 import Calendar from "react-github-contribution-calendar";
 import { AiFillGithub } from "react-icons/ai";
 
+//TODO Need to make algorithm that extracts all the data from the API to girhub request about each repo commit and adds it to each individual date
+
 const GitHub = () => {
   //TODO make this update everyday with javascript datetime or maybe react library?
   //? this is year-month-day

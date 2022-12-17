@@ -5,6 +5,8 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 // import GitHub from "../components/GitHub";
 
+//* Will have GitHub component added in when finished building it
+
 const Contact = () => {
   const form = useRef();
 

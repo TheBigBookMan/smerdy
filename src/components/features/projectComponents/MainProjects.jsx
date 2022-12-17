@@ -3,8 +3,6 @@ import { AiFillGithub } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import { usePageContext } from "../../context/PageContext";
 
-//TODO might need to dd in react router Link for the click to open new page with website-- not sure if react router can do that
-
 const MainProjects = () => {
   const { setIsHomePage } = usePageContext();
   return (

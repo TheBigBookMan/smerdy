@@ -10,8 +10,6 @@ import circle from "../images/circle.png";
 import React, { Suspense, useCallback, useMemo, useRef } from "react";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 
-//TODO make behind the actual content, maybe need to make it relative and others absolute or z-index dunno
-
 extend({ OrbitControls });
 
 function CameraControls() {
