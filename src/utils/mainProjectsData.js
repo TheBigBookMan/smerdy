@@ -46,7 +46,7 @@ export const mainProjectData = [
     deployed: "https://fascinating-horse-1ffdc9.netlify.app/",
     github: "https://github.com/TheBigBookMan/EntertainNow",
     description:
-      "Full-stack, mobile first entertainment application where users can input entertainment criteria and then view the youtube trailer for what they are interested in. There is also user authentication and using a database to add to favourites.",
+      "Full-stack, mobile first entertainment application where users can input entertainment criteria and then view the youtube trailer for what they are interested in. There is also user authentication and using a database to add to favourites. Testing credentials- Username: Gary, Password: 12345678",
     mainDescription:
       "I built this full-stack application with the intention of learning more about Typescript, GraphQL and JWT user authorization. This was a really good test of a project for me as the scale of it wasn't big but the niche parts of it were a good learning step. I deployed this using the Mongo Atlas, Heroku and Netlify which was a huge learning step for me. I had always found that most entertainment search websites would allow you to browse around but never actually view the trailer for what you wanted, so I created this to be an easier method of browsing and viewing trailers. The user can also create an account and add entertainment to favourites to watch the trailers again later on if they want. I had trouble with adding in cookies to local storage/JWT, but I will work on that in future development for extra security.",
     technologies:
