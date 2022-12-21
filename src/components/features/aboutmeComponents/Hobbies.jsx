@@ -16,7 +16,7 @@ const Hobbies = () => {
             className="relative group hover:cursor-pointer"
           >
             <img
-              className="relative w-[280px] h-[260px] rounded-3xl group-hover:brightness-50 transition-all"
+              className="relative w-full h-[260px] rounded-3xl group-hover:brightness-50 transition-all"
               alt={hobby.category}
               src={hobby.image}
             />

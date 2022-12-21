@@ -16,6 +16,7 @@ export const skills = [
       "MySQL/MongoDB",
       "REST/GraphQL API",
       "CRUD Operations",
+      "Heroku/Netlify Deployment",
     ],
   },
   {
