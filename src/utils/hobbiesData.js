@@ -1,4 +1,5 @@
 //* Tech
+import AIMe from "../images/hobbiesImages/AI/AIMe.jpg";
 import DalorianBeach from "../images/hobbiesImages/AI/DalorianBeach.png";
 import BurningMan from "../images/hobbiesImages/AI/BurningMan.png";
 import Cyborg from "../images/hobbiesImages/AI/Cyborg.png";
@@ -60,6 +61,11 @@ export const thumbnails = [
     mainDescription:
       "I love to learn about all different types of technology, that is what made me so interested in programming. I started out learning about blockchain and cryptocurrencies, which lead me to try understand how they were created. This brought me to programming, and since then I have continued to learn about the wide variety of different technologies related to programming- starting with web development. I have a big interest in AI and I have tried out the Dall-E text-to-image AI creator, here is just a showcase of some of the ones that I made. I am eager to learn more as I further my career.",
     showcase: [
+      {
+        imageShowcase: AIMe,
+        descriptionShowcase:
+          "I uploaded a showcase of some portraits of myself and it generated this picture.",
+      },
       {
         imageShowcase: DalorianBeach,
         descriptionShowcase:
