@@ -18,6 +18,7 @@ import River from "../images/hobbiesImages/guitar/River.png";
 import Tears from "../images/hobbiesImages/guitar/Tears.png";
 
 //* Hiking
+import BigThumbnail from "../images/hobbiesImages/hiking/BigThumbnail.png";
 import Big from "../images/hobbiesImages/hiking/Big.jpg";
 import Camino from "../images/hobbiesImages/hiking/Camino.png";
 import Melbs from "../images/hobbiesImages/hiking/Melbs.jpg";
@@ -149,7 +150,7 @@ export const thumbnails = [
     ],
   },
   {
-    image: Big,
+    image: BigThumbnail,
     category: "Hiking",
     mainDescription:
       "During the 2020 COVID lockdown I took up hiking as I was living in suburban Adelaide and there are many hiking trails walking distance from the house. I enjoyed it so much that I continued to hike after lockdown. Being with the nature and challenging myself physically but most importantly, mentally was really fun.",

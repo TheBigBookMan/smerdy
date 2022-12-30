@@ -2,11 +2,6 @@ import { Link } from "react-router-dom";
 import { usePageContext } from "../../context/PageContext";
 import { thumbnails, reactIcons } from "./../../../utils/hobbiesData";
 
-//TODO add in the AI generated profile pictures
-
-//TODO change the thumbnail of the hikes to the map as its in landscape
-//TODO then can have all thumbnails to be same size
-
 //TODO do rest of Brads suggestions
 
 const Hobbies = () => {
@@ -23,7 +18,7 @@ const Hobbies = () => {
             className="relative group hover:cursor-pointer"
           >
             <img
-              className="relative w-full h-[260px] rounded-3xl group-hover:brightness-50 transition-all"
+              className="relative w-[300px] h-[260px] rounded-3xl group-hover:brightness-50 transition-all"
               alt={hobby.category}
               src={hobby.image}
             />
