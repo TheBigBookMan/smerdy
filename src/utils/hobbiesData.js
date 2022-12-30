@@ -55,12 +55,20 @@ export const reactIcons = [
   FaRunning,
 ];
 
+export const listHobbies = [
+  "Technology",
+  "Guitar",
+  "Hiking",
+  "Sport",
+  "Travel",
+];
+
 export const thumbnails = [
   {
     image: DalorianBeach,
     category: "Technology",
     mainDescription:
-      "I love to learn about all different types of technology, that is what made me so interested in programming. I started out learning about blockchain and cryptocurrencies, which lead me to try understand how they were created. This brought me to programming, and since then I have continued to learn about the wide variety of different technologies related to programming- starting with web development. I have a big interest in AI and I have tried out the Dall-E text-to-image AI creator, here is just a showcase of some of the ones that I made. I am eager to learn more as I further my career.",
+      "I love to learn about all different types of technology, that is what made me so interested in programming. I started out learning about blockchain and cryptocurrencies, which lead me to try understand how they were created. This brought me to programming, and since then I have continued to learn about the wide variety of different technologies related to programming- starting with web development. I have a big interest in AI and I have tried out the Dall-E text-to-image AI creator and Wonder portrait creator, here is just a showcase of some of the ones that I made. I am eager to learn more as I further my career.",
     showcase: [
       {
         imageShowcase: AIMe,

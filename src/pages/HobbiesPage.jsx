@@ -1,5 +1,5 @@
-import { useParams } from "react-router-dom";
-import { thumbnails } from "../utils/hobbiesData";
+import { useParams, Link } from "react-router-dom";
+import { thumbnails, listHobbies } from "../utils/hobbiesData";
 import { AiFillPlayCircle } from "react-icons/ai";
 
 const HobbiesPage = () => {
@@ -19,12 +19,24 @@ const HobbiesPage = () => {
 
   return (
     <div className="flex flex-col items-center gap-4 bg-gray-900 w-full min-h-screen  pt-20 p-4">
+      <ul className="flex gap-4">
+        {listHobbies.map((hobby) => (
+          <Link
+            to={`/hobbie/${hobby}`}
+            className={`text-green-500 cursor-pointer ${
+              hobbietitle === hobby && "font-bold"
+            }`}
+          >
+            {hobby}
+          </Link>
+        ))}
+      </ul>
       <div className="max-w-[1000px] flex flex-col gap-4">
         <h1 className="text-3xl md:text-4xl text-green-400 font-bold text-center">
           {selectedHobby.category}
         </h1>
         <p className="text-zinc-50">{selectedHobby.mainDescription}</p>
-        <ul className="flex flex-col items-center md:flex-row md:flex-wrap gap-4">
+        <ul className="flex flex-col items-center md:flex-row md:justify-center md:flex-wrap gap-4">
           {showcase.map((item) => (
             <li className="flex flex-col gap-2 max-w-[300px]">
               {!needsLinks ? (
