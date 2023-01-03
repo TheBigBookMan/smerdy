@@ -50,7 +50,7 @@ export const sideProjectData = [
     mainDescription:
       "!!!Currently in development!!! As someone who likes to go for hikes, walks and runs, I always like to keep statistics of my daily, weekly, monthly and yearly exercises. I use the application Strava, and find it keeps good records of my information. However, I have friends who also like to do some exercises but they use different applications. I enjoy to have some sort of competition with friends to compare how much exercise we have completed, but it's hard to do that with separate applications. I wanted to have one place where all the data could be uploaded to then compare with friends, especially because some applications are better at recording a specific activity than others, so it would get messy trying to collect all data from different applications and keep a clean record of it. This is a great challenge for me because it is a tricky API to database architecture, as well as creating a social aspect of it with friends.",
     technologies:
-      "ReactJS, Javascript/Typescript, React Packages, JWT, Vite, Third Party APIs, Apollo, Prisma, NodeJS, ExpressJS, GraphQL, MongoDB, NPM Packages.",
+      "ReactJS, Javascript/Typescript, TailwindCSS, React Packages, JWT, Vite, Third Party APIs, Apollo, Prisma, NodeJS, ExpressJS, GraphQL, MongoDB, NPM Packages.",
   },
   {
     title: "Constellations",
@@ -58,21 +58,11 @@ export const sideProjectData = [
     deployed: "",
     github: "https://github.com/TheBigBookMan/Constellations",
     description:
-      "This project utilizes the back-end programming language NodeJS with OOP, as well as front end languages- HTML, CSS and Javascript. The user will be prompted with inputting information about their employees and the program will create a HTML and CSS file with the information. The user will be able to interact with information such as email and github accounts for easy access to contacting the employees.",
+      "This is a client-side landing page which shows astronomy information about constellations and galaxies while using React libraries to create fun and creative animations.",
     mainDescription:
-      "This application was used with Object-Oriented Programming to design the layout of information for employees. Using the inquirer package, the user will be prompted with questions in relation to their employees. The user will input information and then a profile manager application will launch with the information added in.",
-    technologies: "JEST, CSS, Javascript, OOP, NodeJS, NPM Packages.",
-  },
-  {
-    title: "NFTView",
-    img: "",
-    deployed: "",
-    github: "https://github.com/TheBigBookMan/NFTView",
-    description:
-      "This project utilizes the back-end programming language NodeJS with OOP, as well as front end languages- HTML, CSS and Javascript. The user will be prompted with inputting information about their employees and the program will create a HTML and CSS file with the information. The user will be able to interact with information such as email and github accounts for easy access to contacting the employees.",
-    mainDescription:
-      "This application was used with Object-Oriented Programming to design the layout of information for employees. Using the inquirer package, the user will be prompted with questions in relation to their employees. The user will input information and then a profile manager application will launch with the information added in.",
-    technologies: "JEST, CSS, Javascript, OOP, NodeJS, NPM Packages.",
+      "I wanted to create a website that looks interesting and has cool animations as it would be a great way for me to explore some React libraries. I have always had an interest in astronomy, and the theme of space always has an interesting aesthetic to it. I wanted to create a parallax animation as the main aspect of the website as it's a new and popular feature. This was a fun project to work on as it tested my creativity and helped improve my front-end design capabilities.",
+    technologies:
+      "ReactJS, Javascript, TailwindCSS, Third Party API, Vite, React Spring",
   },
   {
     title: "Social Network API",
