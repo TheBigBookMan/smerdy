@@ -48,7 +48,7 @@ export const sideProjectData = [
       "https://drive.google.com/file/d/1bHoyv5UEq2bs0Rve8Jr8UghHoWAD9Bks/view",
     github: "https://github.com/TheBigBookMan/EasyReddit",
     description:
-      "This is an application where users who are bored while programming can run the file to have a quick browse of their favourite Reddit subreddits, posts and comments. The application runs in the command line using Python.",
+      "This is an application where users who are bored while programming can run the file to have a quick browse of their favourite Reddit subreddits, posts and comments. The application runs in the command line using Python. Click the link below for a demo of how it works.",
     mainDescription:
       "I had just learning Python properly by taking an online course and decided I wanted to just test out some new skills, I also figured that I like to have a browse of Reddit for small breaks, so I figured I would make an application that allows me to do while I am coding and in Visual Studio Code still. Very basic application that just calls the Reddit API and allows the user to input the subreddit they want to look at, then they can look at posts based on criteria (New, Hot or Top) and then they can view the content for that post and then if they would like they can view comments for the post.",
     technologies:
