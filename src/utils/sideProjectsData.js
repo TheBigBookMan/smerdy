@@ -3,6 +3,7 @@ import ReadMEGenerator from "../images/projectImages/ReadMEGenerator.png";
 import WeatherApp from "../images/projectImages/WeatherApp.png";
 import Cafe from "../images/projectImages/Cafe.png";
 import OldPortfolio from "../images/projectImages/OldPortfolio.png";
+import EasyReddit from "../images/projectImages/EasyReddit.png";
 
 export const sideProjectData = [
   {
@@ -29,18 +30,6 @@ export const sideProjectData = [
       "ReactJS, Typescript/Javascript, TailwindCSS, Mobile-First Responsive Design, Vite, React Packages, GraphQL/Apollo, ExpressJS, NodeJS, NPM Packages, PostgreSQL, Prisma, JWT.",
   },
   {
-    title: "Team Profile Generator",
-    img: TeamProfileGenerator,
-    deployed:
-      "https://drive.google.com/file/d/1OURcazg1_q24l2h6Id1PUNoIRHLmJ9tE/view",
-    github: "https://github.com/TheBigBookMan/Team-Profile-Generator",
-    description:
-      "This project utilizes the back-end programming language NodeJS with OOP, as well as front end languages- HTML, CSS and Javascript. The user will be prompted with inputting information about their employees and the program will create a HTML and CSS file with the information. The user will be able to interact with information such as email and github accounts for easy access to contacting the employees.",
-    mainDescription:
-      "This application was used with Object-Oriented Programming to design the layout of information for employees. Using the inquirer package, the user will be prompted with questions in relation to their employees. The user will input information and then a profile manager application will launch with the information added in.",
-    technologies: "JEST, CSS, Javascript, OOP, NodeJS, NPM Packages.",
-  },
-  {
     title: "Runners",
     img: "",
     deployed: "",
@@ -51,6 +40,31 @@ export const sideProjectData = [
       "!!!Currently in development!!! As someone who likes to go for hikes, walks and runs, I always like to keep statistics of my daily, weekly, monthly and yearly exercises. I use the application Strava, and find it keeps good records of my information. However, I have friends who also like to do some exercises but they use different applications. I enjoy to have some sort of competition with friends to compare how much exercise we have completed, but it's hard to do that with separate applications. I wanted to have one place where all the data could be uploaded to then compare with friends, especially because some applications are better at recording a specific activity than others, so it would get messy trying to collect all data from different applications and keep a clean record of it. This is a great challenge for me because it is a tricky API to database architecture, as well as creating a social aspect of it with friends.",
     technologies:
       "ReactJS, Javascript/Typescript, TailwindCSS, React Packages, JWT, Vite, Third Party APIs, Apollo, Prisma, NodeJS, ExpressJS, GraphQL, MongoDB, NPM Packages.",
+  },
+  {
+    title: "EasyReddit (Python)",
+    img: EasyReddit,
+    deployed:
+      "https://drive.google.com/file/d/1bHoyv5UEq2bs0Rve8Jr8UghHoWAD9Bks/view",
+    github: "https://github.com/TheBigBookMan/EasyReddit",
+    description:
+      "This is an application where users who are bored while programming can run the file to have a quick browse of their favourite Reddit subreddits, posts and comments. The application runs in the command line using Python.",
+    mainDescription:
+      "I had just learning Python properly by taking an online course and decided I wanted to just test out some new skills, I also figured that I like to have a browse of Reddit for small breaks, so I figured I would make an application that allows me to do while I am coding and in Visual Studio Code still. Very basic application that just calls the Reddit API and allows the user to input the subreddit they want to look at, then they can look at posts based on criteria (New, Hot or Top) and then they can view the content for that post and then if they would like they can view comments for the post.",
+    technologies:
+      "Python, Colorama, Python Requests, Reddit Third Party API and the command line",
+  },
+  {
+    title: "Team Profile Generator",
+    img: TeamProfileGenerator,
+    deployed:
+      "https://drive.google.com/file/d/1OURcazg1_q24l2h6Id1PUNoIRHLmJ9tE/view",
+    github: "https://github.com/TheBigBookMan/Team-Profile-Generator",
+    description:
+      "This project utilizes the back-end programming language NodeJS with OOP, as well as front end languages- HTML, CSS and Javascript. The user will be prompted with inputting information about their employees and the program will create a HTML and CSS file with the information. The user will be able to interact with information such as email and github accounts for easy access to contacting the employees.",
+    mainDescription:
+      "This application was used with Object-Oriented Programming to design the layout of information for employees. Using the inquirer package, the user will be prompted with questions in relation to their employees. The user will input information and then a profile manager application will launch with the information added in.",
+    technologies: "JEST, CSS, Javascript, OOP, NodeJS, NPM Packages.",
   },
   {
     title: "Constellations",
