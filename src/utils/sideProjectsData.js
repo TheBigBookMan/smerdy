@@ -4,6 +4,7 @@ import WeatherApp from "../images/projectImages/WeatherApp.png";
 import Cafe from "../images/projectImages/Cafe.png";
 import OldPortfolio from "../images/projectImages/OldPortfolio.png";
 import EasyReddit from "../images/projectImages/EasyReddit.png";
+import TweetBot from "../images/projectImages/TweetBot.png";
 
 export const sideProjectData = [
   {
@@ -16,6 +17,19 @@ export const sideProjectData = [
       "I wanted to create a portfolio that stood out a little bit more than the rest. I really enjoy learning new Javascript and React technologies, so creating a portfolio that shows off my curiosity I figured would be a smart decision. That's why I have tried to implement some more graphic design/3d modeling with React Three Fiber. Implementing the canvas utility that browsers can use, I created a 3D background with geometry and React Three Fiber metrics. I have also used a React package that provides a GitHub contributions calendar. I had to import the data from a third party API to GitHub and create an algorithm that would count my commits from each repo on their respective days.",
     technologies:
       "ReactJS, Javascript, TailwindCSS, React Three Fiber, React Packages and responsive design.",
+  },
+  {
+    title: "TweetBot (Python)",
+    img: TweetBot,
+    deployed:
+      "https://drive.google.com/file/d/1dtcWgyMfEgKAyvmZm6_N2Hb7TsdMeMBx/view",
+    github: "https://github.com/TheBigBookMan/TweetBot",
+    description:
+      "A basic web scraping python script that allows the user to sign into Twitter and post a tweet automatically.",
+    mainDescription:
+      "The application prompts the user to input their username, password and what they want to tweet. The script automatically uses web scraping to input the username and password to login. The web scraping then automatically posts the tweet on their account. Thought it was a little fun project to learn web scraping and can come in handy when I want to post a tweet quickly while i'm coding and I don't have to get out my phone or login on the desktop.",
+    technologies:
+      "Python, Web Scraping, Selenium, WebDriver, Time package, Third Party API",
   },
   {
     title: "Houride",
