@@ -1,7 +1,7 @@
 import CoinCharter from "../images/projectImages/CoinCharter.png";
 import EmployeeTracker from "../images/projectImages/EmployeeTracker.png";
-import EmptyYourFridge from "../images/projectImages/EmptyYourFridge.png";
 import EntertainNow from "../images/projectImages/EntertainNow.png";
+import SmerdyGO from "../images/projectImages/SmerdyGO.png";
 
 export const mainProjectData = [
   {
@@ -29,17 +29,18 @@ export const mainProjectData = [
     technologies: "NodeJS, ExpressJS, MySql and NPM packages.",
   },
   {
-    title: "Empty Your Fridge",
-    img: EmptyYourFridge,
-    deployed: "https://thebigbookman.github.io/Empty-Your-Fridge/",
-    github: "https://github.com/TheBigBookMan/Empty-Your-Fridge",
+    title: "SmerdyGO",
+    img: SmerdyGO,
+    deployed: "",
+    github: "https://github.com/TheBigBookMan/SmerdyGO",
     description:
-      "This is a ReactJS client-side application where users can input ingredients that they have laying around at home and select the type of meal they want and then multiple recipes will be presented for them to choose for a meal to empty their fridge!",
+      "I am working on a solo project where users can keep track of important data for themselves. The user will have one app where they can manually keep track of things or import APIs to automatically update for them. This solves the problem of constantly switching between apps to keep track of everything.",
     mainDescription:
-      "I have been a student for as long as I could remember and this meant that I would always have some random ingredients lying around with no idea what to cook with them. I created this mobile-first application with the idea that users will have random ingredients lying around and they can input them into the application (with the select criteria) and then be able to view multiple recipes. They can then click on the recipes to find what other ingredients they will need to buy and how to make the food. I think of it as reverse engineering recipe-hunting. It is handy that the users can then save recipes to favourites for later if they would like to. I might further develop it by making it a PWA and allowing users to view their favourited recipes while offline.",
+      "I was sick of the idea of having to constantly switch between apps to keep on top of my health and fitness, skills development and general goal setting. So I have set out to build an application that will handle all the data for me. Users can input their data manually to get up to date or connect APIs to other tracking applications that will automatically update their data for them. The user will be able to do things such as: have a todos list, goal setting and progress updates, section to categorise and maintain ideas, a calendar for events, contact book, health trackers with API integration and graphical interfaces, skills checklist to see progress, finance tracking for better budgeting, investing so users can stay on top of transactions, API connection for other usages and the ability to add in widgets which can be on the side to keep the user up to date with what they want to connect. This is a very big full stack application but will become very useful as users can have this to store everything they do on it.",
     technologies:
-      "ReactJS, Javascript, TailwindCSS, Local Storage, Third Party API, React Packages and Responsive Design.",
+      "ReactJS, Typescript, Vite, JWT, NodeJS, MongoDB, GraphQL/Apollo, Prisma, Third Party APIs, TailwindCSS and multiple React and Node Packages",
   },
+
   {
     title: "EntertainNow",
     img: EntertainNow,

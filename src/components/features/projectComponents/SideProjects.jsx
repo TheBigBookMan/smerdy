@@ -6,7 +6,7 @@ import { usePageContext } from "../../context/PageContext";
 const SideProjects = () => {
   const { setIsHomePage } = usePageContext();
   return (
-    <ul className="flex flex-col md:flex-row md:flex-wrap md:justify-around lg:w-full lg:flex-col lg:flex-nowrap  gap-2 pr-5 h-[170px] lg:mr-10 lg:h-full overflow-y-scroll scrollbar-thin scrollbar-thumb-green-400 scrollbar-track-zinc-50 scrollbar-thumb-rounded scrollbar-track-rounded">
+    <ul className="flex flex-col md:flex-row md:flex-wrap md:justify-around lg:w-full lg:flex-col lg:flex-nowrap  gap-2 pr-5 h-[170px] md:h-[400px] lg:mr-10 lg:h-full overflow-y-scroll scrollbar-thin scrollbar-thumb-green-400 scrollbar-track-zinc-50 scrollbar-thumb-rounded scrollbar-track-rounded">
       {sideProjectData.map((project) => (
         <li key={project.title}>
           <Link

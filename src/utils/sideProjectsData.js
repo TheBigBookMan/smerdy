@@ -5,6 +5,7 @@ import Cafe from "../images/projectImages/Cafe.png";
 import OldPortfolio from "../images/projectImages/OldPortfolio.png";
 import EasyReddit from "../images/projectImages/EasyReddit.png";
 import TweetBot from "../images/projectImages/TweetBot.png";
+import EmptyYourFridge from "../images/projectImages/EmptyYourFridge.png";
 
 export const sideProjectData = [
   {
@@ -30,6 +31,18 @@ export const sideProjectData = [
       "The application prompts the user to input their username, password and what they want to tweet. The script automatically uses web scraping to input the username and password to login. The web scraping then automatically posts the tweet on their account. Thought it was a little fun project to learn web scraping and can come in handy when I want to post a tweet quickly while i'm coding and I don't have to get out my phone or login on the desktop.",
     technologies:
       "Python, Web Scraping, Selenium, WebDriver, Time package, Third Party API",
+  },
+  {
+    title: "Empty Your Fridge",
+    img: EmptyYourFridge,
+    deployed: "https://thebigbookman.github.io/Empty-Your-Fridge/",
+    github: "https://github.com/TheBigBookMan/Empty-Your-Fridge",
+    description:
+      "This is a ReactJS client-side application where users can input ingredients that they have laying around at home and select the type of meal they want and then multiple recipes will be presented for them to choose for a meal to empty their fridge!",
+    mainDescription:
+      "I have been a student for as long as I could remember and this meant that I would always have some random ingredients lying around with no idea what to cook with them. I created this mobile-first application with the idea that users will have random ingredients lying around and they can input them into the application (with the select criteria) and then be able to view multiple recipes. They can then click on the recipes to find what other ingredients they will need to buy and how to make the food. I think of it as reverse engineering recipe-hunting. It is handy that the users can then save recipes to favourites for later if they would like to. I might further develop it by making it a PWA and allowing users to view their favourited recipes while offline.",
+    technologies:
+      "ReactJS, Javascript, TailwindCSS, Local Storage, Third Party API, React Packages and Responsive Design.",
   },
   {
     title: "Houride",
@@ -81,18 +94,6 @@ export const sideProjectData = [
     technologies: "JEST, CSS, Javascript, OOP, NodeJS, NPM Packages.",
   },
   {
-    title: "Constellations",
-    img: "",
-    deployed: "",
-    github: "https://github.com/TheBigBookMan/Constellations",
-    description:
-      "This is a client-side landing page which shows astronomy information about constellations and galaxies while using React libraries to create fun and creative animations.",
-    mainDescription:
-      "I wanted to create a website that looks interesting and has cool animations as it would be a great way for me to explore some React libraries. I have always had an interest in astronomy, and the theme of space always has an interesting aesthetic to it. I wanted to create a parallax animation as the main aspect of the website as it's a new and popular feature. This was a fun project to work on as it tested my creativity and helped improve my front-end design capabilities.",
-    technologies:
-      "ReactJS, Javascript, TailwindCSS, Third Party API, Vite, React Spring",
-  },
-  {
     title: "Social Network API",
     img: "",
     deployed:
@@ -115,18 +116,6 @@ export const sideProjectData = [
     mainDescription:
       "In our bootcamp we had to create a portfolio using React and this was the first application I built using React and I think is a good measure for how far I have come when comparing it to the current portfolio I have created today. These are only around 2 months difference between they were built, so the difference in how much I have grown and learnt is great to see. I used CSS-In-JS styling, which was also a move I decided to do at the time because I hadn't used TailwindCSS before, so this also shows the progress I have grown from using regular CSS to now Tailwind. I like this project as a whole because I thoroughly enjoyed creating it and learning how React components worked especially.",
     technologies: "Javascript, ReactJS, NPM Packages.",
-  },
-  {
-    title: "WhatToRead",
-    img: "",
-    deployed: "",
-    github: "https://github.com/TheBigBookMan/WhatToRead",
-    description:
-      "This is a server-side book search database for a library, where users will be able to perform CRUD operations to query the database for information about certain books and leave reviews for others.",
-    mainDescription:
-      "!!Currently in development!!- I am wanting to increase my server-side logic and command line skills, so I thought it would be great to create a library book database. Users will be able to query the database through the Inquirer package and find information on interested books. The users will also be able to see if the books are in stock, leave reviews for others and put them on hold. This app will also use JWT for the user to be authenticated when logging in. The use of a relational database will be needed due to the relationships of books, customers and review comments.",
-    technologies:
-      "NodeJS, ExpressJS, GraphQL, PostgreSQL, Prisma, Third Party API, NPM Packages, JWT",
   },
   {
     title: "ReadME Generator",
