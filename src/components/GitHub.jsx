@@ -5,7 +5,7 @@ import { getRepos } from "../utils/github";
 
 const getCommitList = async () => {
   const list = await getRepos();
-  console.log(list);
+  // console.log(list);
   return list;
 };
 
@@ -23,7 +23,7 @@ const GitHub = () => {
   }, []);
 
   //? this is year-month-day
-  var until = "2023-01-29";
+  var until = new Date().toISOString().slice(0, 10);
 
   //TODO this will need to be using the data from the github API and update daily as well--- algorithm tricky
   // var values = {
@@ -36,7 +36,7 @@ const GitHub = () => {
   // console.log(values);
 
   var panelColors = [
-    "#EEEEEE",
+    "#000",
     "#1C7512",
     "#1C7512",
     "#1C7512",
@@ -73,7 +73,7 @@ const GitHub = () => {
 
   if (githubCommitList) {
     var values = githubCommitList;
-    console.log(values);
+    // console.log(values);
   }
 
   return (
@@ -99,23 +99,23 @@ const GitHub = () => {
             <div className="flex flex-row justify-between">
               <div className="flex flex-row gap-1 items-center">
                 <span className="bg-zinc-50 w-[10px] h-[10px] rounded-xl"></span>
-                <p className="text-green-400 text-xs">None</p>
+                <p className="text-green-400 text-xs font-bold">None</p>
               </div>
               <div className="flex flex-row gap-1 items-center">
                 <span className="bg-[#1C7512] w-[10px] h-[10px] rounded-xl"></span>
-                <p className="text-green-400 text-xs">1-5</p>
+                <p className="text-green-400 text-xs font-bold">1-5</p>
               </div>
               <div className="flex flex-row gap-1 items-center">
                 <span className="bg-[#2CAE1E] w-[10px] h-[10px] rounded-xl"></span>
-                <p className="text-green-400 text-xs">6-10</p>
+                <p className="text-green-400 text-xs font-bold">6-10</p>
               </div>
               <div className="flex flex-row gap-1 items-center">
                 <span className="bg-[#44E532] w-[10px] h-[10px] rounded-xl"></span>
-                <p className="text-green-400 text-xs">11-15</p>
+                <p className="text-green-400 text-xs font-bold">11-15</p>
               </div>
               <div className="flex flex-row gap-1 items-center">
                 <span className="bg-[#9AFF8F] w-[10px] h-[10px] rounded-xl"></span>
-                <p className="text-green-400 text-xs">16+</p>
+                <p className="text-green-400 text-xs font-bold">16+</p>
               </div>
             </div>
           </div>

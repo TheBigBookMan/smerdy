@@ -19,16 +19,14 @@ const getDatesDiff = (start_date, end_date, date_format = "YYYY-MM-DD") => {
 };
 
 const date_log = getDatesDiff(
-  "2023-01-12",
+  "2022-06-20",
   new Date().toISOString().slice(0, 10)
 );
 // console.log(date_log);
 
 //? http://haripo.github.io/react-github-contribution-calendar/
 
-// const reposUrl = "https://api.github.com/users/TheBigBookMan/repos";
-const commitUrl =
-  "https://api.github.com/repos/TheBigBookMan/EasyReddit/commits?per_page=100";
+const reposUrl = "https://api.github.com/users/TheBigBookMan/repos";
 
 //* need to get repos from others that have put commits on
 //* sort through repos adding the commit dates to the array of dates
@@ -36,11 +34,12 @@ const commitUrl =
 export const getRepos = async () => {
   let repos;
   try {
-    // const { data } = await axios.get(reposUrl);
+    const { data } = await axios.get(reposUrl);
     // ? Array with the repos names
-    // const reposArray = data.map((repo) => repo.name);
-    // console.log(reposArray);
-    const commits = getRepoCommits();
+    const reposArray = data.map((repo) => repo.name);
+
+    const commits = await getRepoCommits(reposArray);
+    // console.log(commits);
     return commits;
     // console.log(data);
   } catch (err) {
@@ -50,13 +49,55 @@ export const getRepos = async () => {
   return repos;
 };
 
-export const getRepoCommits = async () => {
+export const getRepoCommits = async (reposList) => {
   try {
-    const { data } = await axios.get(commitUrl);
-    let repoCommits = data.map((info) => info.commit.author.date.slice(0, 10));
-    const addedCommits = await addCommitsToDate(repoCommits);
-    // console.log(data);
-    return addedCommits;
+    let addedCommits;
+    // getOtherRepoCommits();
+    for (let i = 0; i < reposList.length; i++) {
+      const allRepoCommits = await concatPages(reposList[i]);
+      console.log(allRepoCommits);
+      let repoCommits = allRepoCommits.map((info) =>
+        info.commit.author.date.slice(0, 10)
+      );
+      addedCommits = await addCommitsToDate(repoCommits);
+      // console.log(addedCommits);
+
+      if (i === reposList.length - 1) {
+        // console.log(addedCommits);
+        return addedCommits;
+      }
+    }
+  } catch (err) {
+    console.log(err);
+  }
+};
+
+const getOtherRepoCommits = async () => {
+  try {
+    const { data } = await axios.get(
+      "https://api.github.com/repos/bradbrad88/coin-charter/commits?per_page=100"
+    );
+    // const commitsOnPage = data.map((commit) => {
+    //   if(commit.)
+    // })
+    console.log(data);
+  } catch (err) {
+    console.log(err);
+  }
+};
+
+const concatPages = async (repo) => {
+  try {
+    let fullCommits = [];
+    for (let i = 1; i < 3; i++) {
+      const { data } = await axios.get(
+        `https://api.github.com/repos/TheBigBookMan/${repo}/commits?per_page=100&page=${i}`
+      );
+      fullCommits = fullCommits.concat(data);
+    }
+
+    // console.log(fullCommits);
+    return fullCommits;
   } catch (err) {
     console.log(err);
   }
