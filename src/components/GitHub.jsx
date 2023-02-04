@@ -74,12 +74,12 @@ const GitHub = () => {
 
   if (githubCommitList) {
     values = githubCommitList;
-    console.log(values);
+    // console.log(values);
   }
 
   return (
     <div className="flex flex-col gap-4 md:w-4/6 lg:pr-36">
-      <div className="flex flex-col">
+      <div className="flex flex-col gap-1">
         <div className="flex flex-row justify-between items-center">
           <h1 className="text-green-400 text-2xl md:text-4xl font-bold">
             Github Daily Contributions
@@ -92,6 +92,13 @@ const GitHub = () => {
             <AiFillGithub className="hover:text-cyan-100 text-green-400 text-4xl transition-all" />
           </a>
         </div>
+        <p className="text-cyan-100 text-sm">
+          This may take a while to load as it is a complex algorithm I created
+          to fetch all the commit API data from the GitHub API. My GitHub commit
+          history shows how determined I am to continue learning and building.
+          Ever since I graduated my Bootcamp in November 2022, I have been self
+          learning through Udemy and Youtube courses, as well as documentation.
+        </p>
         <p className="text-zinc-50 text-xs">Commits</p>
         <div className="flex flex-row justify-between">
           <div className="flex flex-row gap-1 items-center">
