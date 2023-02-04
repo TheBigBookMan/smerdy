@@ -28,17 +28,39 @@ const onePerPage =
 // ?
 const reposUrl = "https://api.github.com/users/TheBigBookMan/repos";
 const commitUrl =
-  "https://api.github.com/repos/TheBigBookMan/Houride/commits?per_page=100";
+  "https://api.github.com/repos/TheBigBookMan/EasyReddit/commits?per_page=100";
+
+//* need to get repos from others that have put commits on
+//* sort through repos adding the commit dates to the array of dates
+//* matching up the commit date with the date
 
 export const getRepos = async () => {
   let repos;
   try {
-    // const {data} = await axios.get(onePerPage);
-    const { headers } = await axios.get(onePerPage);
-    console.log(headers.link);
+    const { data } = await axios.get(reposUrl);
+    // ? Array with the repos names
+    const reposArray = data.map((repo) => repo.name);
+    // console.log(reposArray);
+    getRepoCommits();
+    // console.log(data);
   } catch (err) {
     console.log(err);
   }
 
   return repos;
+};
+
+const getRepoCommits = async () => {
+  try {
+    const { data } = await axios.get(commitUrl);
+    let repoCommits = data.map((info) => info.commit.author.date.slice(0, 10));
+    addCommitsToDate(repoCommits);
+    // console.log(data);
+  } catch (err) {
+    console.log(err);
+  }
+};
+
+const addCommitsToDate = async (commits) => {
+  console.log(commits);
 };

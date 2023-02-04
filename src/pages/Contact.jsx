@@ -3,7 +3,7 @@ import { HashLink as Link } from "react-router-hash-link";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-// import GitHub from "../components/GitHub";
+import GitHub from "../components/GitHub";
 
 //* Will have GitHub component added in when finished building it
 
@@ -98,7 +98,7 @@ const Contact = () => {
             theme="dark"
           />
         </div>
-        {/* <GitHub /> */}
+        <GitHub />
       </div>
     </section>
   );

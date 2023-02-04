@@ -11,6 +11,7 @@ const Hobbies = () => {
         const Icon = reactIcons[idx];
         return (
           <Link
+            key={idx}
             onClick={() => setIsHomePage(false)}
             to={`/hobbie/${hobby.category}`}
             className="relative group hover:cursor-pointer"
