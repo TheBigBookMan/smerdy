@@ -1,6 +1,6 @@
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import { useRef, useState } from "react";
-import { useSpring, animated, config } from "@react-spring/three";
+import { useSpring, animated } from "@react-spring/three";
 
 const MyMeshSphere = () => {
   const [active, setActive] = useState(false);

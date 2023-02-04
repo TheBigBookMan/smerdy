@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import NavLinks from "./NavLinks";
-import { useSpring, animated, config, useTransition } from "@react-spring/web";
+import { useSpring, animated } from "@react-spring/web";
 
 //TODO add in resume file for the click resume
 // https://reactgo.com/react-download-file-on-button-click/
@@ -24,7 +24,7 @@ const Navigation = () => {
   };
 
   const HamburgerMenu = () => {
-    const [props, api] = useSpring(
+    const [props] = useSpring(
       () => ({
         from: { x: 50 },
         to: { x: -70 },

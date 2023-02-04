@@ -7,6 +7,12 @@ import GitHub from "../components/GitHub";
 
 //* Will have GitHub component added in when finished building it
 
+// const getTheRepos = async () => {
+//   const reposGot = await getRepos();
+//   console.log(reposGot);
+// };
+// getTheRepos();
+
 const Contact = () => {
   const form = useRef();
 

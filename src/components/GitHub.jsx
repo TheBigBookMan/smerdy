@@ -1,22 +1,40 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Calendar from "react-github-contribution-calendar";
 import { AiFillGithub } from "react-icons/ai";
+import { getRepos } from "../utils/github";
 
 //TODO Need to make algorithm that extracts all the data from the API to girhub request about each repo commit and adds it to each individual date
 
+const getCommitList = async () => {
+  const list = await getRepos();
+  console.log(list);
+  return list;
+};
+
 const GitHub = () => {
+  const [githubCommitList, setGithubCommitList] = useState({});
+
+  useEffect(() => {
+    const getData = getCommitList();
+    if (getData) {
+      setGithubCommitList(getData);
+    }
+  }, []);
+
   //TODO make this update everyday with javascript datetime or maybe react library?
   //? this is year-month-day
-  var until = "2022-12-10";
+  var until = "2023-01-29";
 
   //TODO this will need to be using the data from the github API and update daily as well--- algorithm tricky
-  var values = {
-    "2022-12-10": 1,
-    "2022-12-09": 7,
-    "2022-12-08": 11,
-    "2022-12-07": 15,
-    "2022-12-06": 25,
-  };
+  // var values = {
+  //   "2023-01-23": 1,
+  //   "2023-01-26": 2,
+  //   "2023-01-27": 3,
+  //   "2023-01-28": 4,
+  //   "2023-01-29": 4,
+  // };
+  var values = githubCommitList;
+  console.log(values);
 
   var panelColors = [
     "#EEEEEE",
