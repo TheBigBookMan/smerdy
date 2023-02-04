@@ -52,10 +52,10 @@ export const getRepos = async () => {
 export const getRepoCommits = async (reposList) => {
   try {
     let addedCommits;
-    // getOtherRepoCommits();
+    addedCommits = await getOtherRepoCommits();
     for (let i = 0; i < reposList.length; i++) {
       const allRepoCommits = await concatPages(reposList[i]);
-      console.log(allRepoCommits);
+      // console.log(allRepoCommits);
       let repoCommits = allRepoCommits.map((info) =>
         info.commit.author.date.slice(0, 10)
       );
@@ -74,13 +74,14 @@ export const getRepoCommits = async (reposList) => {
 
 const getOtherRepoCommits = async () => {
   try {
-    const { data } = await axios.get(
-      "https://api.github.com/repos/bradbrad88/coin-charter/commits?per_page=100"
-    );
-    // const commitsOnPage = data.map((commit) => {
-    //   if(commit.)
-    // })
-    console.log(data);
+    const concatCommits = await concatPages("coin-charter");
+
+    const commitsOnPage = concatCommits.filter((commit) => {
+      if (commit.committer.login === "TheBigBookMan") {
+        return commit;
+      }
+    });
+    return commitsOnPage;
   } catch (err) {
     console.log(err);
   }
@@ -89,13 +90,19 @@ const getOtherRepoCommits = async () => {
 const concatPages = async (repo) => {
   try {
     let fullCommits = [];
-    for (let i = 1; i < 3; i++) {
-      const { data } = await axios.get(
-        `https://api.github.com/repos/TheBigBookMan/${repo}/commits?per_page=100&page=${i}`
-      );
-      fullCommits = fullCommits.concat(data);
+    for (let i = 1; i < 4; i++) {
+      if (repo === "coin-charter") {
+        const { data } = await axios.get(
+          `https://api.github.com/repos/bradbrad88/${repo}/commits?per_page=100&page=${i}`
+        );
+        fullCommits = fullCommits.concat(data);
+      } else {
+        const { data } = await axios.get(
+          `https://api.github.com/repos/TheBigBookMan/${repo}/commits?per_page=100&page=${i}`
+        );
+        fullCommits = fullCommits.concat(data);
+      }
     }
-
     // console.log(fullCommits);
     return fullCommits;
   } catch (err) {

@@ -70,55 +70,57 @@ const GitHub = () => {
     "Nov",
     "Dec",
   ];
+  let values;
 
   if (githubCommitList) {
-    var values = githubCommitList;
-    // console.log(values);
+    values = githubCommitList;
+    console.log(values);
   }
 
   return (
     <div className="flex flex-col gap-4 md:w-4/6 lg:pr-36">
-      {!values ? (
+      <div className="flex flex-col">
+        <div className="flex flex-row justify-between items-center">
+          <h1 className="text-green-400 text-2xl md:text-4xl font-bold">
+            Github Daily Contributions
+          </h1>
+          <a
+            href="https://github.com/TheBigBookMan?tab=repositories"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <AiFillGithub className="hover:text-cyan-100 text-green-400 text-4xl transition-all" />
+          </a>
+        </div>
+        <p className="text-zinc-50 text-xs">Commits</p>
+        <div className="flex flex-row justify-between">
+          <div className="flex flex-row gap-1 items-center">
+            <span className="bg-zinc-50 w-[10px] h-[10px] rounded-xl"></span>
+            <p className="text-green-400 text-xs font-bold">None</p>
+          </div>
+          <div className="flex flex-row gap-1 items-center">
+            <span className="bg-[#1C7512] w-[10px] h-[10px] rounded-xl"></span>
+            <p className="text-green-400 text-xs font-bold">1-5</p>
+          </div>
+          <div className="flex flex-row gap-1 items-center">
+            <span className="bg-[#2CAE1E] w-[10px] h-[10px] rounded-xl"></span>
+            <p className="text-green-400 text-xs font-bold">6-10</p>
+          </div>
+          <div className="flex flex-row gap-1 items-center">
+            <span className="bg-[#44E532] w-[10px] h-[10px] rounded-xl"></span>
+            <p className="text-green-400 text-xs font-bold">11-15</p>
+          </div>
+          <div className="flex flex-row gap-1 items-center">
+            <span className="bg-[#9AFF8F] w-[10px] h-[10px] rounded-xl"></span>
+            <p className="text-green-400 text-xs font-bold">16+</p>
+          </div>
+        </div>
+      </div>
+
+      {values.length < 10 ? (
         <h1 className="font-bold text-green-400">Loading...</h1>
       ) : (
         <>
-          <div className="flex flex-col">
-            <div className="flex flex-row justify-between items-center">
-              <h1 className="text-green-400 text-2xl md:text-4xl font-bold">
-                Github Daily Contributions
-              </h1>
-              <a
-                href="https://github.com/TheBigBookMan?tab=repositories"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <AiFillGithub className="hover:text-cyan-100 text-green-400 text-4xl transition-all" />
-              </a>
-            </div>
-            <p className="text-zinc-50 text-xs">Commits</p>
-            <div className="flex flex-row justify-between">
-              <div className="flex flex-row gap-1 items-center">
-                <span className="bg-zinc-50 w-[10px] h-[10px] rounded-xl"></span>
-                <p className="text-green-400 text-xs font-bold">None</p>
-              </div>
-              <div className="flex flex-row gap-1 items-center">
-                <span className="bg-[#1C7512] w-[10px] h-[10px] rounded-xl"></span>
-                <p className="text-green-400 text-xs font-bold">1-5</p>
-              </div>
-              <div className="flex flex-row gap-1 items-center">
-                <span className="bg-[#2CAE1E] w-[10px] h-[10px] rounded-xl"></span>
-                <p className="text-green-400 text-xs font-bold">6-10</p>
-              </div>
-              <div className="flex flex-row gap-1 items-center">
-                <span className="bg-[#44E532] w-[10px] h-[10px] rounded-xl"></span>
-                <p className="text-green-400 text-xs font-bold">11-15</p>
-              </div>
-              <div className="flex flex-row gap-1 items-center">
-                <span className="bg-[#9AFF8F] w-[10px] h-[10px] rounded-xl"></span>
-                <p className="text-green-400 text-xs font-bold">16+</p>
-              </div>
-            </div>
-          </div>
           <Calendar
             panelAttributes={panelAttributes}
             values={values}
