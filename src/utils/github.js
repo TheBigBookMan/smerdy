@@ -1,4 +1,31 @@
 import axios from "axios";
+import moment from "moment";
+
+//? Returns an array of dates between the two dates
+const getDatesDiff = (start_date, end_date, date_format = "YYYY-MM-DD") => {
+  const getDateAsArray = (date) => {
+    return moment(date.split(/\D+/), date_format);
+  };
+  const diff =
+    getDateAsArray(end_date).diff(getDateAsArray(start_date), "days") + 1;
+  const dates = [];
+  for (let i = 0; i < diff; i++) {
+    const nextDate = getDateAsArray(start_date).add(i, "day");
+    const isWeekEndDay = nextDate.isoWeekday() > 7;
+    if (!isWeekEndDay) dates.push(nextDate.format(date_format));
+  }
+  return dates;
+};
+
+const date_log = getDatesDiff(
+  "2023-01-12",
+  new Date().toISOString().slice(0, 10)
+);
+// const date_log = getDatesDiff(
+//   "2022-06-20",
+//   new Date().toISOString().slice(0, 10)
+// );
+console.log(date_log);
 
 //!
 //! Currently working on this
