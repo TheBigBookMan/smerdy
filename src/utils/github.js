@@ -90,7 +90,7 @@ const createObjectDatesCommits = async (list) => {
       {}
     );
 
-    console.log(finalObjCommits);
+    // console.log(finalObjCommits);
     return finalObjCommits;
   } catch (err) {
     console.log(err);
