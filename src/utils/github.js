@@ -1,6 +1,8 @@
 import axios from "axios";
 import moment from "moment";
 
+const accessToken = "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";
+
 //? Returns an array of dates between the two dates
 const getDatesDiff = (start_date, end_date, date_format = "YYYY-MM-DD") => {
   const getDateAsArray = (date) => {
@@ -34,7 +36,11 @@ const reposUrl = "https://api.github.com/users/TheBigBookMan/repos";
 export const getRepos = async () => {
   let repos;
   try {
-    const { data } = await axios.get(reposUrl);
+    const { data } = await axios.get(reposUrl, {
+      headers: {
+        Authorization: `token ${accessToken}`,
+      },
+    });
     // ? Array with the repos names
     const reposArray = data.map((repo) => repo.name);
 
@@ -93,12 +99,22 @@ const concatPages = async (repo) => {
     for (let i = 1; i < 4; i++) {
       if (repo === "coin-charter") {
         const { data } = await axios.get(
-          `https://api.github.com/repos/bradbrad88/${repo}/commits?per_page=100&page=${i}`
+          `https://api.github.com/repos/bradbrad88/${repo}/commits?per_page=100&page=${i}`,
+          {
+            headers: {
+              Authorization: `token ${accessToken}`,
+            },
+          }
         );
         fullCommits = fullCommits.concat(data);
       } else {
         const { data } = await axios.get(
-          `https://api.github.com/repos/TheBigBookMan/${repo}/commits?per_page=100&page=${i}`
+          `https://api.github.com/repos/TheBigBookMan/${repo}/commits?per_page=100&page=${i}`,
+          {
+            headers: {
+              Authorization: `token ${accessToken}`,
+            },
+          }
         );
         fullCommits = fullCommits.concat(data);
       }
