@@ -95,13 +95,10 @@ const GitHub = () => {
           </a>
         </div>
         <p className="text-cyan-100 text-sm">
-          I originally created an algorithm to get my commit history from API
-          calls to the GitHub API and it worked, however there were too many
-          calls and the limit was exceeded every page load so instead I had to
-          hardcode it. My GitHub commit history shows how determined I am to
-          continue learning and building. Ever since I graduated my Bootcamp in
-          November 2022, I have been self learning through Udemy and Youtube
-          courses, as well as reading documentation.
+          My GitHub commit history shows how determined I am to continue
+          learning and building. Ever since I graduated my Bootcamp in November
+          2022, I have been self learning through Udemy and Youtube courses, as
+          well as reading documentation.
         </p>
         <p className="text-zinc-50 text-xs">Commits</p>
         <div className="flex flex-row justify-between">
