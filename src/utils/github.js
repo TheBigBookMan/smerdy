@@ -4,7 +4,7 @@ import moment from "moment";
 // const accessToken = "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";
 const accessToken = process.env.REACT_APP_ACCESS_TOKEN;
 
-//? Returns an array of dates between the two dates
+//? Returns an array of dates between the two datess
 const getDatesDiff = (start_date, end_date, date_format = "YYYY-MM-DD") => {
   const getDateAsArray = (date) => {
     return moment(date.split(/\D+/), date_format);
