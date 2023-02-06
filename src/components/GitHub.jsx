@@ -2,25 +2,27 @@ import React, { useState, useEffect } from "react";
 import Calendar from "react-github-contribution-calendar";
 import { AiFillGithub } from "react-icons/ai";
 import { getRepos } from "../utils/github";
+import { githubCommits } from "../utils/commits";
 
-const getCommitList = async () => {
-  const list = await getRepos();
-  // console.log(list);
-  return list;
-};
+// const getCommitList = async () => {
+//   const list = await getRepos();
+//   // console.log(JSON.stringify(list));
+//   return list;
+// };
 
 const GitHub = () => {
-  const [githubCommitList, setgithubCommitList] = useState({});
+  // const [githubCommitList, setgithubCommitList] = useState({});
 
-  useEffect(() => {
-    const fetchData = async () => {
-      const getData = await getCommitList();
-      if (getData) {
-        setgithubCommitList(getData);
-      }
-    };
-    fetchData();
-  }, []);
+  //? Initially made a github API call to get all commits from each repo and store into an object, the algorithms do work and it displays correctly automatically, but requires too many API calls which exceed the GitHub limit so it won't work unfortunately. Have to do it manually now
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     const getData = await getCommitList();
+  //     if (getData) {
+  //       setgithubCommitList(getData);
+  //     }
+  //   };
+  //   fetchData();
+  // }, []);
 
   //? this is year-month-day
   var until = new Date().toISOString().slice(0, 10);
@@ -70,12 +72,12 @@ const GitHub = () => {
     "Nov",
     "Dec",
   ];
-  let values;
+  let values = githubCommits;
 
-  if (githubCommitList) {
-    values = githubCommitList;
-    // console.log(values);
-  }
+  // if (githubCommitList) {
+  // values = githubCommitList;
+  //   // console.log(values);
+  // }
 
   return (
     <div className="flex flex-col gap-4 md:w-4/6 lg:pr-36">
@@ -93,11 +95,13 @@ const GitHub = () => {
           </a>
         </div>
         <p className="text-cyan-100 text-sm">
-          This may take a while to load as it is a complex algorithm I created
-          to fetch all the commit API data from the GitHub API. My GitHub commit
-          history shows how determined I am to continue learning and building.
-          Ever since I graduated my Bootcamp in November 2022, I have been self
-          learning through Udemy and Youtube courses, as well as documentation.
+          I originally created an algorithm to get my commit history from API
+          calls to the GitHub API and it worked, however there were too many
+          calls and the limit was exceeded every page load so instead I had to
+          hardcode it. My GitHub commit history shows how determined I am to
+          continue learning and building. Ever since I graduated my Bootcamp in
+          November 2022, I have been self learning through Udemy and Youtube
+          courses, as well as reading documentation.
         </p>
         <p className="text-zinc-50 text-xs">Commits</p>
         <div className="flex flex-row justify-between">
