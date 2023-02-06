@@ -1,7 +1,8 @@
 import axios from "axios";
 import moment from "moment";
 
-const accessToken = "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";
+// const accessToken = "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";
+const accessToken = process.env.REACT_APP_ACCESS_TOKEN;
 
 //? Returns an array of dates between the two dates
 const getDatesDiff = (start_date, end_date, date_format = "YYYY-MM-DD") => {
