@@ -1,6 +1,6 @@
 import TeamProfileGenerator from "../images/projectImages/TeamProfileGenerator.png";
 import ReadMEGenerator from "../images/projectImages/ReadMEGenerator.png";
-import WeatherApp from "../images/projectImages/WeatherApp.png";
+import StockGraph from "../images/projectImages/StockGraph.png";
 import Cafe from "../images/projectImages/Cafe.png";
 import OldPortfolio from "../images/projectImages/OldPortfolio.png";
 import EasyReddit from "../images/projectImages/EasyReddit.png";
@@ -43,6 +43,18 @@ export const sideProjectData = [
       "I have been a student for as long as I could remember and this meant that I would always have some random ingredients lying around with no idea what to cook with them. I created this mobile-first application with the idea that users will have random ingredients lying around and they can input them into the application (with the select criteria) and then be able to view multiple recipes. They can then click on the recipes to find what other ingredients they will need to buy and how to make the food. I think of it as reverse engineering recipe-hunting. It is handy that the users can then save recipes to favourites for later if they would like to. I might further develop it by making it a PWA and allowing users to view their favourited recipes while offline.",
     technologies:
       "ReactJS, Javascript, TailwindCSS, Local Storage, Third Party API, React Packages and Responsive Design.",
+  },
+  {
+    title: "StockGraph (Python)",
+    img: StockGraph,
+    deployed: "",
+    github: "https://github.com/TheBigBookMan/StockGraph",
+    description:
+      "This is a simple GUI application where users can input certain criteria for a US stock, and then they will be able to view a price chart based on the input.",
+    mainDescription:
+      "I like the idea of having just a simple GUI that you can open up easily and just quickly search for a graph on a US stock price. I created this GUI with PySimpleGui with the intention of it being super straight forward and easy to use with a few clicks of a button. The user input details about which stock they want, date range and then the timeframe of each price. This information is then sent to the YahooFinance API call and then the user is presented with a chart with the line displaying the price movements, this was done with matplotlib and pyplot. The users US stocks are also saved into a .txt file to their computer as a basic database if they want to do quicker selection.",
+    technologies:
+      "Python, PySimpleGui, MatPlotLib, PyPlot, Yahoo Finance Third Party API and PyInstaller.",
   },
   {
     title: "Houride",
@@ -128,18 +140,6 @@ export const sideProjectData = [
     mainDescription:
       "Once the application has started, the user will be prompter with some questions in regards to the README file content. The questions will require answers in the form of text input, list selection or no response (with default choice). These prompts are created by importing the dependency Inquirer in the command line. A README file will be generated within their root folder.",
     technologies: "NodeJS, NPM Package- Inquirer",
-  },
-
-  {
-    title: "Weather App",
-    img: WeatherApp,
-    deployed: "https://thebigbookman.github.io/Weather-Dashboard/",
-    github: "https://github.com/TheBigBookMan/Weather-Dashboard",
-    description:
-      "This is a client-side weather app where users can search for a city they want to know the weather for. The weather will show up for current day and for 5 days afterwards. There is a history of each city that the user searches so they can view later.",
-    mainDescription:
-      "This was one of the first applications I made after starting to learn to code. I was about 4 weeks into my coding bootcamp and had just started learning Javascript and APIs. This is a basic weather app that utilizes API calling and logic to determine the correct information is being presented on the screen. Using the local storage to store the history was a good learning step as to what computers can do and how programmers can interact locally with every user.",
-    technologies: "HTML, CSS, Javascript, Third Party API and Local Storage",
   },
   {
     title: "Coffee & Bagels",
