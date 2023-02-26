@@ -6,9 +6,10 @@ import { githubCommits } from "../utils/commits";
 
 // const getCommitList = async () => {
 //   const list = await getRepos();
-//   // console.log(JSON.stringify(list));
+//   console.log(JSON.stringify(list));
 //   return list;
 // };
+// getCommitList();
 
 const GitHub = () => {
   // const [githubCommitList, setgithubCommitList] = useState({});
