@@ -5,16 +5,16 @@ import SmerdyGO from "../images/projectImages/SmerdyGO.png";
 
 export const mainProjectData = [
   {
-    title: "CoinCharter",
+    title: "Highlighters",
     img: CoinCharter,
-    deployed: "https://coin-charter-au.herokuapp.com/",
-    github: "https://github.com/bradbrad88/coin-charter",
+    deployed: "https://highlighters.vercel.app/",
+    github: "https://github.com/TheBigBookMan/highlighters",
     description:
-      "This is a social crypto coin app that uses the MERN stack and GraphQL with a coingeko crypto third party API. I worked collaboratively in a team and mainly worked on front-end components, the database, routes and logic.",
+      "This is a social media application where users post highlight events of a specific timeframe (daily, weekly, monthly, yearly). It encourages users to think back to moments that stood out as positive so they can post it as their highlight.",
     mainDescription:
-      "!!The URL is currently down as we are migrating the database!!- This application is a social media/crypto analysis/technical analysis combination of concepts. Users can create an account, add friends, make comments, view friends activity and connect with friends. The user can also view cryptocurrencies and their information, while being able to save them to favourites, make comments on the coin and view others comments. Users can also create technical analysis for charts of the coins and upload a screenshot for others to view, comment and upvote. We are currently migrating the database and ORM from MongoDB/Mongoose to PostgreSQL/Prisma and (it was in MongoDB/Mongoose for our bootcamp required criteria) and we are searching to get a proper trading chart feature where users can save the actual chart to the database so other users can interact with it, rather than just a screenshot.",
+      "This application allows users to follow other users and be followed back, which then gives the user the ability to see who they are following posts as well as others see their posts from following them. How the timeframe posting works: A user can only make one post a day on the 'daily' timeframe, after a week the user can look back at the 7 'daily' posts and then choose the one which stood out the most as a highlight and select that as their 'weekly' post. Then at the end of the month the user can select one of the 4 'weekly' posts for their month, and end of the year choose one of the 12 'monthly' posts for their 'yearly' post. The idea of the application is that users have to look over their previous highlights they have had recently and then choose the one that stands out the most based on the timeframe. This is a great application for people who want to record nice moments in their life and be able to constantly be reminded of their own life highlights.",
     technologies:
-      "Typescript/Javascript, ReactJS, NodeJS, JWT, TailwindCSS, GraphQL/Apollo, MongoDB/Mongoose, Third Party APIs, AWS S3 Buckets and multiple NPM packages.",
+      "Typescript/Javascript, ReactJS/NextJS13, NodeJS, FireBase, GoogleAuth, GoogleCloud, TailwindCSS, Vercel, React packages.",
   },
   {
     title: "Employee Tracker",
