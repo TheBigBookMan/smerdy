@@ -98,8 +98,8 @@ const GitHub = () => {
         <p className="text-cyan-100 text-sm">
           My GitHub commit history shows how determined I am to continue
           learning and building. Ever since I graduated my Bootcamp in November
-          2022, I have been self learning through Udemy and Youtube courses, as
-          well as reading documentation.
+          2022, I have been building projects and self learning through Udemy
+          and Youtube courses, as well as reading documentation.
         </p>
         <p className="text-zinc-50 text-xs">Commits</p>
         <div className="flex flex-row justify-between">

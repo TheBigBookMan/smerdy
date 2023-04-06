@@ -6,6 +6,7 @@ import OldPortfolio from "../images/projectImages/OldPortfolio.png";
 import EasyReddit from "../images/projectImages/EasyReddit.png";
 import TweetBot from "../images/projectImages/TweetBot.png";
 import EmptyYourFridge from "../images/projectImages/EmptyYourFridge.png";
+import CoinCharter from "../images/projectImages/CoinCharter.png";
 
 export const sideProjectData = [
   {
@@ -18,6 +19,18 @@ export const sideProjectData = [
       "I wanted to create a portfolio that stood out a little bit more than the rest. I really enjoy learning new Javascript and React technologies, so creating a portfolio that shows off my curiosity I figured would be a smart decision. That's why I have tried to implement some more graphic design/3d modeling with React Three Fiber. Implementing the canvas utility that browsers can use, I created a 3D background with geometry and React Three Fiber metrics. I have also used a React package that provides a GitHub contributions calendar. I had to import the data from a third party API to GitHub and create an algorithm that would count my commits from each repo on their respective days.",
     technologies:
       "ReactJS, Javascript, TailwindCSS, React Three Fiber, React Packages and responsive design.",
+  },
+  {
+    title: "CoinCharter",
+    img: CoinCharter,
+    deployed: "https://coin-charter-au.herokuapp.com/",
+    github: "https://github.com/bradbrad88/coin-charter",
+    description:
+      "This is a social crypto coin app that uses the MERN stack and GraphQL with a coingeko crypto third party API. I worked collaboratively in a team and mainly worked on front-end components, the database, routes and logic.",
+    mainDescription:
+      "!!The URL is currently down as we are migrating the database!!- This application is a social media/crypto analysis/technical analysis combination of concepts. Users can create an account, add friends, make comments, view friends activity and connect with friends. The user can also view cryptocurrencies and their information, while being able to save them to favourites, make comments on the coin and view others comments. Users can also create technical analysis for charts of the coins and upload a screenshot for others to view, comment and upvote. We are currently migrating the database and ORM from MongoDB/Mongoose to PostgreSQL/Prisma and (it was in MongoDB/Mongoose for our bootcamp required criteria) and we are searching to get a proper trading chart feature where users can save the actual chart to the database so other users can interact with it, rather than just a screenshot.",
+    technologies:
+      "Typescript/Javascript, ReactJS, NodeJS, JWT, TailwindCSS, GraphQL/Apollo, MongoDB/Mongoose, Third Party APIs, AWS S3 Buckets and multiple NPM packages.",
   },
   {
     title: "TweetBot (Python)",
