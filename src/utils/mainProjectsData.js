@@ -1,4 +1,4 @@
-import CoinCharter from "../images/projectImages/CoinCharter.png";
+import Highlighters from "../images/projectImages/Highlighters.png";
 import EmployeeTracker from "../images/projectImages/EmployeeTracker.png";
 import EntertainNow from "../images/projectImages/EntertainNow.png";
 import SmerdyGO from "../images/projectImages/SmerdyGO.png";
@@ -6,7 +6,7 @@ import SmerdyGO from "../images/projectImages/SmerdyGO.png";
 export const mainProjectData = [
   {
     title: "Highlighters",
-    img: CoinCharter,
+    img: Highlighters,
     deployed: "https://highlighters.vercel.app/",
     github: "https://github.com/TheBigBookMan/highlighters",
     description:
