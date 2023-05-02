@@ -4,12 +4,12 @@ import { AiFillGithub } from "react-icons/ai";
 import { getRepos } from "../utils/github";
 import { githubCommits } from "../utils/commits";
 
-const getCommitList = async () => {
-    const list = await getRepos();
-    console.log(JSON.stringify(list));
-    return list;
-};
-getCommitList();
+// const getCommitList = async () => {
+//     const list = await getRepos();
+//     console.log(JSON.stringify(list));
+//     return list;
+// };
+// getCommitList();
 
 const GitHub = () => {
     // const [githubCommitList, setgithubCommitList] = useState({});
